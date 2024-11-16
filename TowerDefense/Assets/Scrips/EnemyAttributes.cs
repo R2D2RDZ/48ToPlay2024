@@ -39,7 +39,7 @@ public class EnemyAttributes : MonoBehaviour
     }
 
     void Die(){
-        //electrum += value;
+        Player.Instance.AddElectrum(value);
         Destroy(this.gameObject);
     }
 
