@@ -33,5 +33,3 @@ public class CentralElectrica : MonoBehaviour
         }
     }
 }
-
-
