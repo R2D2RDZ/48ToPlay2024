@@ -7,7 +7,7 @@ public class BossAttributes : MonoBehaviour
 
     public EnemyAttributes atributos;
     public GameObject hijo;
-    public float birthTime = 2;
+    public const float birthTime = 2f;
 
     public bool birth = false;
     // Start is called before the first frame update
@@ -18,20 +18,21 @@ public class BossAttributes : MonoBehaviour
     }
 
     // Update is called once per frame
-/*    void FixedUpdate()
+    void FixedUpdate()
     {
         if(!birth && atributos.currentNavPoint > 1){
-            birth = true;
             StartCoroutine(Birth());
         }
     }
 
     IEnumerator Birth()
     {
-        Debug.Log("HA NACIDO");
-        Instantiate(hijo, atributos.points.NavPoints[atributos.currentNavPoint-1], transform.rotation);
-        hijo.GetComponent<EnemyAttributes>().currentNavPoint = atributos.currentNavPoint-1;
-        yield return new WaitForSeconds(birthTime);
-        birth = false;
-    }*/
+        birth=true;
+        while(true){
+            Debug.Log("HA NACIDO");
+            Instantiate(hijo, atributos.points.NavPoints[atributos.currentNavPoint-1], transform.rotation);
+            hijo.GetComponent<EnemyAttributes>().currentNavPoint = atributos.currentNavPoint;
+            yield return new WaitForSeconds(birthTime);
+        }
+    }
 }

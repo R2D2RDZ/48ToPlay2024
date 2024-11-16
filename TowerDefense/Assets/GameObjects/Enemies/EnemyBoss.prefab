@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 258681134166445556}
   - component: {fileID: 3370124861920972853}
   - component: {fileID: 48532035110004497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atributos: {fileID: 0}
   hijo: {fileID: 4000424395377160995, guid: c7acdf27825e1e94da2b413f000172cc, type: 3}
-  birthTime: 0
+  birth: 0
 --- !u!61 &3370124861920972853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5638652082104745735}
   - component: {fileID: 9101222238228256101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

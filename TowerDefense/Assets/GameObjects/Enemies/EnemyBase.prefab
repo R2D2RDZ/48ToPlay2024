@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6022191087426074009}
   - component: {fileID: 3370124861920972853}
   - component: {fileID: 48532035110004497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBase
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -54,6 +54,8 @@ MonoBehaviour:
   maxSpeed: 10
   damage: 10
   isVisible: 0
+  currentNavPoint: 2
+  points: {fileID: 0}
 --- !u!61 &3370124861920972853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5638652082104745735}
   - component: {fileID: 9101222238228256101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
