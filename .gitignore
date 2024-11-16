@@ -1,12 +1,76 @@
-# Ignore the following files and folders:
-/TowerDefense/Library/
-/TowerDefense/Temp/
-/TowerDefense/Obj/
-/TowerDefense/Build/
-/TowerDefense/Builds/
-/TowerDefense/Logs/
-/TowerDefense/UserSettings/
+# Ignore everything inside the TowerDefense folder that should not be tracked
+TowerDefense/[Ll]ibrary/
+TowerDefense/[Tt]emp/
+TowerDefense/[Oo]bj/
+TowerDefense/[Bb]uild/
+TowerDefense/[Bb]uilds/
+TowerDefense/[Ll]ogs/
+TowerDefense/[Mm]emoryCaptures/
+TowerDefense/*.stackdump
 
-# User-specific files
-.DS_Store
-Thumbs.db
+# Visual Studio / MonoDevelop generated files
+TowerDefense/.vscode/
+TowerDefense/*.csproj
+TowerDefense/*.unityproj
+TowerDefense/*.sln
+TowerDefense/*.suo
+TowerDefense/*.user
+TowerDefense/*.userprefs
+TowerDefense/*.pidb
+TowerDefense/*.booproj
+TowerDefense/*.svd
+
+# Rider generated files
+TowerDefense/.idea/
+TowerDefense/*.idea/
+TowerDefense/*.ipr
+TowerDefense/*.iws
+TowerDefense/*.iml
+TowerDefense/*.asset
+
+# Cache files
+TowerDefense/*.csproj.*
+TowerDefense/*.pidb.*
+
+# Unity metadata files
+TowerDefense/*.meta
+
+# Unity auto-generated settings
+TowerDefense/*.asset
+
+# Crash reports
+TowerDefense/sys_crash
+
+# OS generated files
+TowerDefense/.DS_Store
+TowerDefense/.DS_Store?
+TowerDefense/._*
+TowerDefense/.Spotlight-V100
+TowerDefense/.Trashes
+TowerDefense/ehthumbs.db
+TowerDefense/Thumbs.db
+
+# Packages
+# Uncomment if you have custom package files you want to keep.
+# /TowerDefense/Packages/
+
+# Exclude Unity Asset Store downloaded assets
+/TowerDefense/[Aa]ssets/[Aa]ssetStoreTools*/
+
+# Logs and temporary files
+TowerDefense/*.log
+
+# Visual Studio / MonoDevelop generated files
+TowerDefense/.vscode/
+TowerDefense/.vs/
+TowerDefense/*.csproj
+TowerDefense/*.unityproj
+TowerDefense/*.sln
+TowerDefense/*.suo
+TowerDefense/*.user
+TowerDefense/*.userprefs
+TowerDefense/*.pidb
+TowerDefense/*.booproj
+TowerDefense/*.svd
+
+TowerDefense/UserSettings/
