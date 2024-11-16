@@ -30,7 +30,7 @@ public class EnemyAttributes : MonoBehaviour
         }
     }
 
-    void Dañarse(int daño){
+    public void Dañarse(int daño){
         life -= daño;
         if(life<0){
             Die();
