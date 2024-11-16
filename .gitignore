@@ -1,0 +1,12 @@
+# Ignore the following files and folders:
+/TowerDefense/Library/
+/TowerDefense/Temp/
+/TowerDefense/Obj/
+/TowerDefense/Build/
+/TowerDefense/Builds/
+/TowerDefense/Logs/
+/TowerDefense/UserSettings/
+
+# User-specific files
+.DS_Store
+Thumbs.db
