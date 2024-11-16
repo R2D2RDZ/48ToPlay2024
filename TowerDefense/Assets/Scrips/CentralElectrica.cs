@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
 public class CentralElectrica : MonoBehaviour
 {
     public float energiaTotal = 100.0f;

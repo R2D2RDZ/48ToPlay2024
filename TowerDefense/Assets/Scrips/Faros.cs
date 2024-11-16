@@ -7,12 +7,12 @@ using static UnityEditor.PlayerSettings;
 {
     public float energiaTotal = 100.0f;
     public CentralElectrica centralElectrica;
-    public List<KarenTorretasPruebas> torretasConectadas;
+    public List<GunClass> torretasConectadas;
     private bool estaConectada = false; // Indica si la bobina está conectada a la Central Eléctrica
 
     void Start()
     {
-        torretasConectadas = new List<KarenTorretasPruebas>();
+        torretasConectadas = new List<GunClass>();
     }
 
     public void ActualizarEnergiaDesdeCentral(float nuevaEnergia)
@@ -24,7 +24,7 @@ using static UnityEditor.PlayerSettings;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        KarenTorretasPruebas torreta = other.GetComponent<KarenTorretasPruebas>();
+        GunClass torreta = other.GetComponent<GunClass>();
         if (torreta != null && !torretasConectadas.Contains(torreta))
         {
             torretasConectadas.Add(torreta);
@@ -34,7 +34,7 @@ using static UnityEditor.PlayerSettings;
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        KarenTorretasPruebas torreta = other.GetComponent<KarenTorretasPruebas>();
+        GunClass torreta = other.GetComponent<GunClass>();
         if (torreta != null && torretasConectadas.Contains(torreta))
         {
             torretasConectadas.Remove(torreta);
@@ -51,12 +51,12 @@ using static UnityEditor.PlayerSettings;
         }
 
         float energiaDisponible = energiaTotal;
-        foreach (KarenTorretasPruebas torreta in torretasConectadas)
+        foreach (GunClass torreta in torretasConectadas)
         {
-            if (energiaDisponible >= torreta.ConsumoEnergia)
+            if (energiaDisponible >= torreta.energyConsumed)
             {
-                torreta.Energia = torreta.ConsumoEnergia;
-                energiaDisponible -= torreta.ConsumoEnergia;
+                torreta.Energia = torreta.energyConsumed;
+                energiaDisponible -= torreta.energyConsumed;
                 Debug.Log($"Torreta: {torreta.name}: Activada, energía restante: {energiaDisponible}%");
             }
             else
@@ -67,6 +67,7 @@ using static UnityEditor.PlayerSettings;
         }
     }
 }*/
+
 
 
 public class Faros : MonoBehaviour
@@ -90,6 +91,7 @@ public class Faros : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Entro al tigger 1");
         // Verificar si el objeto tiene el tag "GunClass"
         if (other.CompareTag("GunClass"))
         {
@@ -104,6 +106,7 @@ public class Faros : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        Debug.Log("Entro al tigger 2");
         // Verificar si el objeto tiene el tag "GunClass"
         if (other.CompareTag("GunClass"))
         {
@@ -127,10 +130,10 @@ public class Faros : MonoBehaviour
         float energiaDisponible = energiaTotal;
         foreach (KarenTorretasPruebas torreta in torretasConectadas)
         {
-            if (energiaDisponible >= torreta.ConsumoEnergia)
+            if (energiaDisponible >= torreta.energyConsumed)
             {
-                torreta.Energia = torreta.ConsumoEnergia;
-                energiaDisponible -= torreta.ConsumoEnergia;
+                torreta.Energia = torreta.energyConsumed;
+                energiaDisponible -= torreta.energyConsumed;
                 Debug.Log($"Torreta: {torreta.name}: Activada, energía restante: {energiaDisponible}%");
             }
             else
@@ -141,10 +144,3 @@ public class Faros : MonoBehaviour
         }
     }
 }
-
-
-
-
-
-
-

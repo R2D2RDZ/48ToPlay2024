@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KarenTorretasPruebas : MonoBehaviour
 {
-    public float ConsumoEnergia;
+    public float energyConsumed;
     public float Energia { get; set; }
 
     void Start()

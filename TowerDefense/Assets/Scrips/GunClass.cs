@@ -6,8 +6,10 @@ using UnityEngine;
 
 public class GunClass : MonoBehaviour
 {
-	//
-	float time = 0;
+    //
+    public float Energia { get; set; }
+
+    float time = 0;
 	int tick = 0;
 	//[SerializeField] 
 	public float damage = 1;
