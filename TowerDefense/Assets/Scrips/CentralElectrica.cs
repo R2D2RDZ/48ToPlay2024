@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CentralElectrica : MonoBehaviour
 {
-    public float energiaTotalCentral = 100.0f;
+    public static float energiaTotalCentral = 100.0f;
     public List<Faros> bobinasConectadas;
 
     void Start()

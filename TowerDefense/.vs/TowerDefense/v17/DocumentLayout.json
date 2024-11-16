@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\assets\\scrips\\controladorconexiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\controladorconexiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\karen\\onedrive\\escritorio\\48toplay2024\\towerdefense\\assets\\scrips\\faros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\faros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,6 +22,13 @@
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\central#2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
+=======
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\assets\\scrips\\controladorconexiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\controladorconexiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\assets\\scrips\\enemyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\enemyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,11 +60,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+=======
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+>>>>>>> Stashed changes
               "Title": "Central#2.cs",
               "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Central#2.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\Central#2.cs",
@@ -112,7 +130,11 @@
               "RelativeDocumentMoniker": "Assets\\Scrips\\CentralElectrica.cs",
               "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\CentralElectrica.cs",
               "RelativeToolTip": "Assets\\Scrips\\CentralElectrica.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAABMAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:20:13.657Z",
               "EditorCaption": ""
@@ -125,20 +147,32 @@
               "RelativeDocumentMoniker": "Assets\\Scrips\\ControladorConexiones.cs",
               "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\ControladorConexiones.cs",
               "RelativeToolTip": "Assets\\Scrips\\ControladorConexiones.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:20:06.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
               "Title": "Faros.cs",
               "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Faros.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\Faros.cs",
               "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Faros.cs",
               "RelativeToolTip": "Assets\\Scrips\\Faros.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAALoAAAAAAAAAAAAswJEAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:19:54.7Z",
               "EditorCaption": ""
