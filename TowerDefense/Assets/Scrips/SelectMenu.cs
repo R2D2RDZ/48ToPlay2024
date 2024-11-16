@@ -11,22 +11,34 @@ public class SelectMenu : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // Left-click
         {
-            if (currentDropdownMenu != null)
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit)) // Detect collider under the mouse
             {
-                Destroy(currentDropdownMenu); // Remove the previous menu if one exists
+                // Destroy existing menu if one exists
+                if (currentDropdownMenu != null)
+                {
+                    Destroy(currentDropdownMenu);
+                }
+
+                // Get the position of the hit collider
+                Vector3 spawnPosition = hit.collider.transform.position;
+
+                // Create and position the dropdown menu
+                currentDropdownMenu = Instantiate(dropdownMenuPrefab, transform);
+                RectTransform menuRect = currentDropdownMenu.GetComponent<RectTransform>();
+
+                // Convert world position to canvas space
+                RectTransform canvasRect = GetComponent<RectTransform>();
+                Vector2 viewportPoint = Camera.main.WorldToViewportPoint(spawnPosition);
+                Vector2 canvasPoint = new Vector2(
+                    (viewportPoint.x * canvasRect.sizeDelta.x) - (canvasRect.sizeDelta.x * 0.5f),
+                    (viewportPoint.y * canvasRect.sizeDelta.y) - (canvasRect.sizeDelta.y * 0.5f)
+                );
+
+                menuRect.anchoredPosition = canvasPoint;
             }
-
-            Vector2 mousePosition = Input.mousePosition;
-
-            // Create and position the dropdown menu at the mouse position
-            currentDropdownMenu = Instantiate(dropdownMenuPrefab, transform);
-            RectTransform menuRect = currentDropdownMenu.GetComponent<RectTransform>();
-
-            // Convert screen point to local point in canvas space
-            RectTransform canvasRect = GetComponent<RectTransform>();
-            Vector2 localPoint;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, mousePosition, null, out localPoint);
-            menuRect.anchoredPosition = localPoint;
         }
     }
 }
