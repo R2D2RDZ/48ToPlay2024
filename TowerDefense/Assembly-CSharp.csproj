@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scrips\GunClass.cs" />
-    <Compile Include="Assets\Scrips\Currency.cs" />
     <Compile Include="Assets\Scrips\ControladorConexiones.cs" />
     <Compile Include="Assets\Scrips\Faros.cs" />
     <Compile Include="Assets\Scrips\SelectMenu.cs" />
@@ -70,6 +69,7 @@
     <Compile Include="Assets\Scripts\LightTowerTrigger.cs" />
     <Compile Include="Assets\Scrips\ProjectileClass.cs" />
     <Compile Include="Assets\Scrips\EnemyAttributes.cs" />
+    <Compile Include="Assets\Scrips\Player.cs" />
     <Compile Include="Assets\Scrips\LevelCreator.cs" />
   </ItemGroup>
   <ItemGroup>
