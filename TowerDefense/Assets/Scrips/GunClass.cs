@@ -16,7 +16,7 @@ public class GunClass : MonoBehaviour
 	
 	
 	//[SerializeField]
-	public float cost = 1;
+	public float cost;
 	public float energyConsumed = 1;
 	public bool isOn = true;
 	//[SerializeField]

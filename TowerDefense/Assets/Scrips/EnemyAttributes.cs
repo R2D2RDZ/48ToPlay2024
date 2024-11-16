@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAttributes : MonoBehaviour
 {
+    public int value;
     public float life = 10;
     public float speed = 10;
     public float reachDistance = 0.2f;
