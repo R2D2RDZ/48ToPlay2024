@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyAttributes : MonoBehaviour
 {
-    public int life = 10;
+    public float life = 10;
     public float speed = 10;
     public float reachDistance = 0.2f;
     public int maxSpeed = 10;
-    public int damage = 10;
+    public float damage = 10;
     public bool isVisible = false;
 
     private int currentNavPoint = 1;
@@ -30,9 +30,9 @@ public class EnemyAttributes : MonoBehaviour
         }
     }
 
-    public void Dañarse(int daño){
+    public void Dañarse(float daño){
         life -= daño;
-        if(life<0){
+        if(life<0f){
             Die();
         }
     }
