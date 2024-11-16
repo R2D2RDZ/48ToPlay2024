@@ -11,7 +11,7 @@ public class LevelCreator : MonoBehaviour
 
     [SerializeField] GameObject[] Square;
 
-    public NavPoint[] NavPoints;
+    public Vector2[] NavPoints;
     void Start()
     {
 
@@ -20,7 +20,7 @@ public class LevelCreator : MonoBehaviour
             try
             {
                 string[] lineas = File.ReadAllLines(filepath);
-                NavPoints = new NavPoint[int.Parse(lineas[0])+1];
+                NavPoints = new Vector2[int.Parse(lineas[0])+1];
                 // Procesar cada línea y asignar valores a la matriz
                 for (int i = 0; i < 18; i++) // Filas
                 {
@@ -36,7 +36,7 @@ public class LevelCreator : MonoBehaviour
                         }
                         else {
                             Instantiate(Square[1], new Vector3(i, j, 0), Quaternion.identity);
-                            NavPoints[int.Parse(valores[j])] = new NavPoint(new Vector2(i,j));
+                            NavPoints[int.Parse(valores[j])] = new Vector2(i,j);
                             //int.Parse(valores[j])
                             //Debug.LogError(NavPoints[int.Parse(valores[j])].position);
                         }
@@ -60,12 +60,4 @@ public class LevelCreator : MonoBehaviour
 
 }
 
-public class NavPoint {
-    public Vector2 position;
-
-    public NavPoint(Vector2 position)
-    {
-        this.position = position;
-    }
-}
 
