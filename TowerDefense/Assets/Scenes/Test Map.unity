@@ -488,7 +488,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdownMenuPrefab: {fileID: 8333944837352662576, guid: 0d0b71181ca85474b9deca352aae593a, type: 3}
+<<<<<<< Updated upstream
   optionPrefab: {fileID: 0}
+=======
+  optionPrefab: {fileID: 545430879470118601, guid: 05a4eefbbdcaa4241abee6b8c89a55ed, type: 3}
+>>>>>>> Stashed changes
 --- !u!1 &2110648703
 GameObject:
   m_ObjectHideFlags: 0
