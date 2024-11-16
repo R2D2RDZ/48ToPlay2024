@@ -31,8 +31,10 @@ public class GunClass : MonoBehaviour
 			Vector3 enemyPosition = listEnemy.First().transform.position;
 			Vector3 myPosition = transform.position;
 			Vector3 trayectoria = new Vector3 (enemyPosition.x - myPosition.x, enemyPosition.y - myPosition.y, enemyPosition.z).normalized;
+			float angle = Vector2.Angle(new Vector2(myPosition.x,myPosition.y),new Vector2(trayectoria.x,trayectoria.y));
+			Quaternion myRotation = new Quaternion(0, 0,angle , 0);
 			//programar una forma para evitar no atacar a enemigos fuera del rango
-			GameObject newProjectile = Instantiate(projectile, myPosition, transform.rotation);
+			GameObject newProjectile = Instantiate(projectile, myPosition, myRotation);
 			newProjectile.GetComponent<ProjectileClass>().damage = damage;
 			newProjectile.GetComponent<Rigidbody2D>().AddForce(trayectoria*speed);
 			Destroy(newProjectile, 4f);

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\lifrc\\code\\game jam 2024\\48toplay2024\\towerdefense\\assets\\scrips\\projectileclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\projectileclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\lifrc\\code\\game jam 2024\\48toplay2024\\towerdefense\\assets\\scrips\\gunclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\gunclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\lifrc\\code\\game jam 2024\\48toplay2024\\towerdefense\\assets\\scrips\\levelcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\levelcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\assets\\scrips\\projectileclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\projectileclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\assets\\scrips\\enemyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\enemyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +38,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "EnemyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\EnemyAttributes.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\EnemyAttributes.cs",
+              "ToolTip": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\EnemyAttributes.cs",
+              "RelativeToolTip": "Assets\\Scrips\\EnemyAttributes.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T07:19:48.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProjectileClass.cs",
               "DocumentMoniker": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\ProjectileClass.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\ProjectileClass.cs",
               "ToolTip": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\ProjectileClass.cs",
               "RelativeToolTip": "Assets\\Scrips\\ProjectileClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T06:30:40.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T06:30:40.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GunClass.cs",
               "DocumentMoniker": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\GunClass.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\GunClass.cs",
               "ToolTip": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\GunClass.cs",
               "RelativeToolTip": "Assets\\Scrips\\GunClass.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T06:03:17.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LevelCreator.cs",
-              "DocumentMoniker": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\LevelCreator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scrips\\LevelCreator.cs",
-              "ToolTip": "C:\\Users\\lifrc\\Code\\Game Jam 2024\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\LevelCreator.cs",
-              "RelativeToolTip": "Assets\\Scrips\\LevelCreator.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T06:03:16.381Z",
               "EditorCaption": ""
             }
           ]
