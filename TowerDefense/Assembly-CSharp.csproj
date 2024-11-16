@@ -60,6 +60,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.52f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scrips\Currency.cs" />
     <Compile Include="Assets\Scrips\Faros.cs" />
     <Compile Include="Assets\Scrips\KarenTorretasPruebas.cs" />
     <Compile Include="Assets\Scripts\LightTowerTrigger.cs" />
