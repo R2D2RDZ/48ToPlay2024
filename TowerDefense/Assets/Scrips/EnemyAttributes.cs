@@ -4,35 +4,35 @@ using UnityEngine;
 
 public class EnemyAttributes : MonoBehaviour
 {
-    public int life = 10;
+    public float life = 10;
     public float speed = 10;
+    public float reachDistance = 0.2f;
     public int maxSpeed = 10;
-    public int damage = 10;
+    public float damage = 10;
     public bool isVisible = false;
+
+    private int currentNavPoint = 1;
     private Rigidbody2D rb2d;
+    private LevelCreator points;
     // Start is called before the first frame update
     void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+        points = Camera.main.GetComponent<LevelCreator>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(Input.GetKeyDown("space")){
-            Dañarse(9);
+        if (!(points.NavPoints.Length == 0) || !(currentNavPoint >= points.NavPoints.Length))
+        {
+            MoveToNextNavPoint();
         }
-        float horizontal = speed; // A/D or Left/Right
-        float vertical = 0;     // W/S or Up/Down
-
-        // Move the object using transform in 2D space (X and Y)
-        Vector2 movement = new Vector2(horizontal, vertical);
-        rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
     }
 
-    void Dañarse(int daño){
+    public void Dañarse(float daño){
         life -= daño;
-        if(life<0){
+        if(life<0f){
             Die();
         }
     }
@@ -50,6 +50,19 @@ public class EnemyAttributes : MonoBehaviour
     {
         yield return new WaitForSeconds(tiempo);
         speed = maxSpeed;
+    }
+
+    void MoveToNextNavPoint()
+    {
+        Vector2 targetPosition = points.NavPoints[currentNavPoint];
+        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
+
+        transform.Translate(direction * speed * Time.deltaTime);
+
+        if(Vector2.Distance(transform.position, targetPosition) < reachDistance)
+        {
+            currentNavPoint = (currentNavPoint + 1);
+        }
     }
 
 }

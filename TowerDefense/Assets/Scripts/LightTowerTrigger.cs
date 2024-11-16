@@ -11,7 +11,6 @@ public class LightTower : MonoBehaviour
         {
             // Hace visible al enemigo para las unidades ofensivas, porque si no no lo ven y no pueden atacar
             enemy.isVisible = true;
-            enemy.Status(0.10f, 2);
         }
     }
 
