@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class Player
 {
-    public int electrum;
-    // Start is called before the first frame update
-    void Start()
-    {
-        electrum +=50;
-    }
+    static public int hp;
+    static public int electrum;
 
-    // Update is called once per frame
-    void Update()
+    static public damageRecieve(int damage)
     {
-        
-
-    }
+        hp -= damage;
+    } 
 }
