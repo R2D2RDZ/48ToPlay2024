@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Currency : MonoBehaviour
 {
+    public int electrum;
     // Start is called before the first frame update
     void Start()
     {
