@@ -35,7 +35,7 @@ public class GunClass : MonoBehaviour
 			GameObject newProjectile = Instantiate(projectile, myPosition, transform.rotation);
 			newProjectile.GetComponent<ProjectileClass>().damage = damage;
 			newProjectile.GetComponent<Rigidbody2D>().AddForce(trayectoria*speed);
-			Destroy(newProjectile, 3f);
+			Destroy(newProjectile, 4f);
 		}
 		else {
 			//Debug.Log("No hay enemigos");	
