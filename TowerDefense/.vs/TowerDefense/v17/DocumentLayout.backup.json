@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\",
   "Documents": [
     {
@@ -28,6 +29,16 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\assets\\scrips\\levelcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\r2d2r\\onedrive\\documentos\\unity projects\\48toplay2024\\towerdefense\\assets\\scrips\\selectmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\selectmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\assets\\scrips\\levelcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\levelcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -43,6 +54,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "KarenTorretasPruebas.cs",
               "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\KarenTorretasPruebas.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\KarenTorretasPruebas.cs",
@@ -51,11 +63,22 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:23:16.756Z",
+=======
+              "Title": "SelectMenu.cs",
+              "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\SelectMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\SelectMenu.cs",
+              "ToolTip": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\SelectMenu.cs",
+              "RelativeToolTip": "Assets\\Scrips\\SelectMenu.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T07:41:50.225Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "CentralElectrica.cs",
               "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\CentralElectrica.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\CentralElectrica.cs",
@@ -124,10 +147,20 @@
               "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\LevelCreator.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\LevelCreator.cs",
               "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\LevelCreator.cs",
+=======
+              "Title": "LevelCreator.cs",
+              "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\LevelCreator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\LevelCreator.cs",
+              "ToolTip": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\LevelCreator.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "Assets\\Scrips\\LevelCreator.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBYAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2024-11-16T06:03:16.381Z"
+=======
+              "WhenOpened": "2024-11-16T02:43:02.902Z"
+>>>>>>> Stashed changes
             }
           ]
         }

@@ -47,12 +47,21 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "EnemyAttributes.cs",
               "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\EnemyAttributes.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\EnemyAttributes.cs",
               "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\EnemyAttributes.cs",
               "RelativeToolTip": "Assets\\Scrips\\EnemyAttributes.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwCkAAAAKAAAAAAAAAA==",
+=======
+              "Title": "SelectMenu.cs",
+              "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\SelectMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\SelectMenu.cs",
+              "ToolTip": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\SelectMenu.cs",
+              "RelativeToolTip": "Assets\\Scrips\\SelectMenu.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCoAAAARAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:25:02.358Z",
               "EditorCaption": ""
