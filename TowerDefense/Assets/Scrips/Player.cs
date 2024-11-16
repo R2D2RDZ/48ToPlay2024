@@ -7,7 +7,7 @@ public class Player
     static public int hp;
     static public int electrum;
 
-    static public damageRecieve(int damage)
+    static public void damageRecieve(int damage)
     {
         hp -= damage;
     } 
