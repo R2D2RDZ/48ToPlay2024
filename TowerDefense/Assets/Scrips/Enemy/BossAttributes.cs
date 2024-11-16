@@ -33,5 +33,5 @@ public class BossAttributes : MonoBehaviour
         hijo.GetComponent<EnemyAttributes>().currentNavPoint = atributos.currentNavPoint-1;
         yield return new WaitForSeconds(birthTime);
         birth = false;
-    }
-}*/
+    }*/
+}
