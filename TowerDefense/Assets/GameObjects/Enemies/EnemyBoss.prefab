@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2806851205326989561}
   - component: {fileID: 6022191087426074009}
+  - component: {fileID: 258681134166445556}
   - component: {fileID: 3370124861920972853}
   - component: {fileID: 48532035110004497}
   m_Layer: 0
@@ -54,6 +55,23 @@ MonoBehaviour:
   maxSpeed: 10
   damage: 10
   isVisible: 0
+  currentNavPoint: 1
+  points: {fileID: 0}
+--- !u!114 &258681134166445556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000424395377160995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fcf038bed9c67408d242c2ab417747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atributos: {fileID: 0}
+  hijo: {fileID: 4000424395377160995, guid: c7acdf27825e1e94da2b413f000172cc, type: 3}
+  birthTime: 0
 --- !u!61 &3370124861920972853
 BoxCollider2D:
   m_ObjectHideFlags: 0

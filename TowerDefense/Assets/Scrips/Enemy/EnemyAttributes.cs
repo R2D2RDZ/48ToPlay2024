@@ -12,9 +12,9 @@ public class EnemyAttributes : MonoBehaviour
     public float damage = 10;
     public bool isVisible = false;
 
-    private int currentNavPoint = 1;
+    public int currentNavPoint = 1;
     private Rigidbody2D rb2d;
-    private LevelCreator points;
+    public LevelCreator points;
     // Start is called before the first frame update
     void Start()
     {

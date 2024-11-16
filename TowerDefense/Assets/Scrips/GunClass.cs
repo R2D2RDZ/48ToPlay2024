@@ -15,7 +15,7 @@ public class GunClass : MonoBehaviour
 	public float damage = 1;
 	public int cooldown = 1;
 	public float speed = 5;
-	
+	public bool isEnabled = true;
 	
 	//[SerializeField]
 	public float cost;
@@ -55,7 +55,7 @@ public class GunClass : MonoBehaviour
 	}
 	private void FixedUpdate() {
 		isTick();
-		if (isOn && (tick % cooldown) == 0) {
+		if (isEnabled  && isOn && (tick % cooldown) == 0) {
 			Attack();
 		}
 	}
