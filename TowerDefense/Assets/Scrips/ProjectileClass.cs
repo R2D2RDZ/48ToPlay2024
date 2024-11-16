@@ -9,8 +9,9 @@ public class ProjectileClass : MonoBehaviour
     public float slow = 0f;
 	private void OnTriggerEnter2D(Collider2D collision) {
 		if(collision.tag == "Enemy"){
-			collision.gameObject.GetComponent<EnemyAttributes>();
+			collision.gameObject.GetComponent<EnemyAttributes>().Dañarse(damage);
+			DestroyImmediate(this);
+			Debug.Log("Le diste");
 		}
-		
 	}
 }

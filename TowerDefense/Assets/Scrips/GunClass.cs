@@ -18,7 +18,7 @@ public class GunClass : MonoBehaviour
 	//[SerializeField]
 	public float cost = 1;
 	public float energyConsumed = 1;
-	
+	public bool isOn = true;
 	//[SerializeField]
 	public GameObject projectile;
 	List<GameObject> listEnemy;  
@@ -33,6 +33,7 @@ public class GunClass : MonoBehaviour
 			Vector3 trayectoria = new Vector3 (enemyPosition.x - myPosition.x, enemyPosition.y - myPosition.y, enemyPosition.z).normalized;
 			//programar una forma para evitar no atacar a enemigos fuera del rango
 			GameObject newProjectile = Instantiate(projectile, myPosition, transform.rotation);
+			newProjectile.GetComponent<ProjectileClass>().damage = damage;
 			newProjectile.GetComponent<Rigidbody2D>().AddForce(trayectoria*speed);
 			Destroy(newProjectile, 3f);
 		}
@@ -49,7 +50,7 @@ public class GunClass : MonoBehaviour
 	}
 	private void FixedUpdate() {
 		isTick();
-		if ((tick % cooldown) == 0) {
+		if (isOn && (tick % cooldown) == 0) {
 			Attack();
 		}
 	}
