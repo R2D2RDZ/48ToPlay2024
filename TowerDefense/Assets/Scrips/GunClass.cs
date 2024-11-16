@@ -30,7 +30,23 @@ public class GunClass : MonoBehaviour
 	{
 		if (listEnemy.Count > 0) {
 			Debug.Log("Hay hay  Enemigos");
-			Vector3 enemyPosition = listEnemy.First().transform.position;
+		
+			GameObject enemyTarget = null;
+			int count = listEnemy.Count;
+			for (int i = 0; i < count; i++)
+			{
+				if (listEnemy[i].GetComponent<EnemyAttributes>().isVisible)
+                {
+					enemyTarget = listEnemy[i];
+					break;
+                }
+			}
+			if(enemyTarget == null)
+            {
+				Debug.Log("No hay Enemigos");
+				return;
+            }
+			Vector3 enemyPosition = enemyTarget.transform.position;
 			Vector3 myPosition = transform.position;
 			Vector3 trayectoria = new Vector3 (enemyPosition.x - myPosition.x, enemyPosition.y - myPosition.y, enemyPosition.z).normalized;
 			Vector3 direccion = myPosition - enemyPosition;
@@ -59,8 +75,8 @@ public class GunClass : MonoBehaviour
 			Attack();
 		}
 	}
-	private void OnTriggerEnter2D(Collider2D collision) {
-		if(collision.tag == "Enemy" && collision.gameObject.GetComponent<EnemyAttributes>().isVisible){
+	private void OnTriggerStay2D(Collider2D collision) {
+		if(collision.tag == "Enemy" /*&& collision.gameObject.GetComponent<EnemyAttributes>().isVisible*/){
 			Debug.Log("Encontre un Enemigo");
 			listEnemy.Add(collision.gameObject);
 		}
