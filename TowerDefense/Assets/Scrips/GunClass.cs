@@ -31,8 +31,9 @@ public class GunClass : MonoBehaviour
 			Vector3 enemyPosition = listEnemy.First().transform.position;
 			Vector3 myPosition = transform.position;
 			Vector3 trayectoria = new Vector3 (enemyPosition.x - myPosition.x, enemyPosition.y - myPosition.y, enemyPosition.z).normalized;
-			float angle = Vector2.Angle(new Vector2(myPosition.x,myPosition.y),new Vector2(trayectoria.x,trayectoria.y));
-			Quaternion myRotation = new Quaternion(0, 0,angle , 0);
+			Vector3 direccion = myPosition - enemyPosition;
+			float angle = Mathf.Atan2(direccion.y, direccion.x) * Mathf.Rad2Deg - 90;
+			Quaternion myRotation = Quaternion.AngleAxis(angle, Vector3.forward);
 			//programar una forma para evitar no atacar a enemigos fuera del rango
 			GameObject newProjectile = Instantiate(projectile, myPosition, myRotation);
 			newProjectile.GetComponent<ProjectileClass>().damage = damage;
@@ -57,7 +58,7 @@ public class GunClass : MonoBehaviour
 		}
 	}
 	private void OnTriggerEnter2D(Collider2D collision) {
-		if(collision.tag == "Enemy"){
+		if(collision.tag == "Enemy" && collision.gameObject.GetComponent<EnemyAttributes>().isVisible){
 			Debug.Log("Encontre un Enemigo");
 			listEnemy.Add(collision.gameObject);
 		}

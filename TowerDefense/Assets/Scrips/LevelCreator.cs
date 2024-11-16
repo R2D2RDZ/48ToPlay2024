@@ -29,7 +29,7 @@ public class LevelCreator : MonoBehaviour
 
                     for (int j = 0; j < 10; j++) // Columnas
                     {
-                        Debug.LogWarning(valores[j]);
+                        //Debug.LogWarning(valores[j]);
                         if (int.Parse(valores[j]) == 0)
                         {
                             Instantiate(Square[0], new Vector3(i, j, 0), Quaternion.identity);
