@@ -60,10 +60,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.52f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scrips\LevelCreator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Level0.txt" />
+=======
+    <Compile Include="Assets\Scrips\Faros.cs" />
+    <Compile Include="Assets\Scrips\KarenTorretasPruebas.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
