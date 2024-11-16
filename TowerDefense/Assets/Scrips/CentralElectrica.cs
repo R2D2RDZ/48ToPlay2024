@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CentralElectrica : MonoBehaviour
 {
-    public float energiaTotal = 100.0f;
+    public float energiaTotalCentral = 100.0f;
     public List<Faros> bobinasConectadas;
 
     void Start()
@@ -14,13 +14,13 @@ public class CentralElectrica : MonoBehaviour
 
     public void ConsumirEnergia(float cantidad)
     {
-        energiaTotal -= cantidad;
-        if (energiaTotal < 0) energiaTotal = 0;
+        energiaTotalCentral -= cantidad;
+        if (energiaTotalCentral < 0) energiaTotalCentral = 0;
 
         // Actualiza la energía en todas las bobinas conectadas
         foreach (Faros bobina in bobinasConectadas)
         {
-            bobina.ActualizarEnergiaDesdeCentral(energiaTotal);
+            bobina.ActualizarEnergiaDesdeCentral(energiaTotalCentral);
         }
     }
 
@@ -29,7 +29,7 @@ public class CentralElectrica : MonoBehaviour
         if (!bobinasConectadas.Contains(bobina))
         {
             bobinasConectadas.Add(bobina);
-            bobina.ActualizarEnergiaDesdeCentral(energiaTotal);
+            bobina.ActualizarEnergiaDesdeCentral(energiaTotalCentral);
         }
     }
 }

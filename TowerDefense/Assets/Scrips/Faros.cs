@@ -5,19 +5,21 @@ using static UnityEditor.PlayerSettings;
 
 public class Faros : MonoBehaviour
 {
-    public float energiaTotal = 100.0f;
     public CentralElectrica centralElectrica;
+    public CentralElectrica energiaTotalCentral;
+    public float EnergiaTotal;
     public List<KarenTorretasPruebas> torretasConectadas;
     private bool estaConectada = false; // Indica si la bobina está conectada a la Central Eléctrica
 
     void Start()
     {
         torretasConectadas = new List<KarenTorretasPruebas>();
+        EnergiaTotal = energiaTotalCentral.energiaTotalCentral;
     }
 
     public void ActualizarEnergiaDesdeCentral(float nuevaEnergia)
     {
-        energiaTotal = nuevaEnergia;
+        EnergiaTotal = nuevaEnergia;
         estaConectada = true; // La bobina está activada porque está conectada a la Central
         ActualizarEnergiaTorreta();
     }
@@ -60,7 +62,7 @@ public class Faros : MonoBehaviour
             return;
         }
 
-        float energiaDisponible = energiaTotal;
+        float energiaDisponible = EnergiaTotal;
         foreach (KarenTorretasPruebas torreta in torretasConectadas)
         {
             if (energiaDisponible >= torreta.energyConsumed)
