@@ -13,7 +13,7 @@ public class SceneChanger : MonoBehaviour
     // Corrutina para manejar la pantalla de carga y el retraso
     private IEnumerator CargarEscenaConRetraso(string escena)
     {
-        SceneManager.LoadScene("PantallaDeCarga"); // Cambia a la pantalla de carga
+        SceneManager.LoadScene("Carga"); // Cambia a la pantalla de carga
         yield return new WaitForSeconds(5); // Espera 5 segundos
         SceneManager.LoadScene(escena); // Luego carga la escena del juego
     }

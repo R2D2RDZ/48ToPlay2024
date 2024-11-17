@@ -551,7 +551,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2062904235}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: CambiarANivel1
+        m_MethodName: CambiarANivel1ConCarga
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 284a193955a7d0a4b88924fb5cf423c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea4c4c76d1338b040b3af887444ff9dd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1046,7 +1046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000095367, y: 0.0000038147}
+  m_AnchoredPosition: {x: 0.0000076293945, y: 0.0000038146973}
   m_SizeDelta: {x: 58.1758, y: 33.2433}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728177566
