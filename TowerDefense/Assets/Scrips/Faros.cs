@@ -3,114 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
 
-/*public class Faros : MonoBehaviour
-{
-    public CentralElectrica centralElectrica;
-    //public CentralElectrica energiaTotalCentral;
-    public float EnergiaTotal;
-    public static List<KarenTorretasPruebas> torretasConectadas = new();
-    private bool estaConectada = false; // Indica si la bobina está conectada a la Central Eléctrica
-    public List<Faros> bobinasConectadas = new List<Faros>();
-
-    void Start()
-    {
-        //torretasConectadas = new List<KarenTorretasPruebas>();
-        EnergiaTotal = CentralElectrica.energiaTotalCentral;
-        estaConectada = true;
-    }
-
-    public void ActualizarEnergiaDesdeCentral(float nuevaEnergia)
-    {
-        EnergiaTotal = nuevaEnergia;
-        estaConectada = true; // La bobina está activada porque está conectada a la Central
-        ActualizarEnergiaTorreta();
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Entro al tigger 1");
-        // Verificar si el objeto tiene el tag "GunClass"
-        if (other.CompareTag("GunClass"))
-        {
-            KarenTorretasPruebas torreta = other.GetComponent<KarenTorretasPruebas>();
-            if(torreta == null)
-            {
-                Debug.LogWarning("No encontro la clase KarenTorretasPruebas");
-                return;
-            }
-            if (!torretasConectadas.Contains(torreta))
-            {
-                torretasConectadas.Add(torreta);
-                ActualizarEnergiaTorreta();
-            }
-            else
-            {
-                Debug.Log("Ya estaba registrada");
-            }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        Debug.Log("Entro al tigger 2");
-        // Verificar si el objeto tiene el tag "GunClass"
-        if (other.CompareTag("GunClass"))
-        {
-            KarenTorretasPruebas torreta = other.GetComponent<KarenTorretasPruebas>();
-            if (torreta == null)
-            {
-                Debug.LogWarning("No encontro la clase KarenTorretasPruebas");
-                return;
-            }
-            if (torretasConectadas.Contains(torreta))
-            {
-                torretasConectadas.Remove(torreta);
-                ActualizarEnergiaTorreta();
-            }
-        }
-    }
-
-    public void ActualizarEnergiaTorreta()
-    {
-        if (!estaConectada || torretasConectadas.Count == 0)
-        {
-            Debug.Log("La Bobina no está conectada o no hay torretas en el rango.");
-            return;
-        }
-
-        //float energiaDisponible = EnergiaTotal;
-        Central2.instance.ResetEenergia();
-        foreach (KarenTorretasPruebas torreta in torretasConectadas)
-        {
-            if (CentralElectrica.energiaTotalCentral >= torreta.energyConsumed)
-            {
-                //torreta.Energia = torreta.energyConsumed;
-                //energiaDisponible -= torreta.energyConsumed;
-                Central2.instance.GastarEnergia(torreta.energyConsumed);
-                Debug.Log($"Torreta: {torreta.name}: Activada, energía restante: {CentralElectrica.energiaTotalCentral}%");
-            }
-            else
-            {
-                //torreta.Energia = 0;
-                Debug.Log($"Torreta: {torreta.name}: Sin energía suficiente.");
-            }
-        }
-    }
-}*/
-
 public class Faros : MonoBehaviour
 {
     public CentralElectrica centralElectrica;
     //public CentralElectrica energiaTotalCentral;
     public float EnergiaTotal;
-    public static List<KarenTorretasPruebas> torretasConectadas = new();
+    public static List<GunClass> torretasConectadas = new();
     private bool estaConectada = false; // Indica si la bobina está conectada a la Central Eléctrica
-    public List<Faros> bobinasConectadas = new List<Faros>();
+    public List<Faros> bobinasConectadas = new();
+    public GunClass Torres;
+    public bool ApEn;
 
     void Start()
     {
-        //torretasConectadas = new List<KarenTorretasPruebas>();
+        //torretasConectadas = new List<GunClass>();
         EnergiaTotal = CentralElectrica.energiaTotalCentral;
+        ApEn = GunClass.isOn;
         if (centralElectrica != null)
         {
             ConectarACentral();
@@ -163,10 +71,10 @@ public class Faros : MonoBehaviour
         // Verificar si el objeto tiene el tag "GunClass"
         if (other.CompareTag("Gun"))
         {
-            KarenTorretasPruebas torreta = other.GetComponent<KarenTorretasPruebas>();
+            GunClass torreta = other.GetComponent<GunClass>();
             if (torreta == null)
             {
-                Debug.LogWarning("No encontro la clase KarenTorretasPruebas");
+                Debug.LogWarning("No encontro la clase GunClass");
                 return;
             }
             if (!torretasConectadas.Contains(torreta))
@@ -187,10 +95,10 @@ public class Faros : MonoBehaviour
         // Verificar si el objeto tiene el tag "GunClass"
         if (other.CompareTag("Gun"))
         {
-            KarenTorretasPruebas torreta = other.GetComponent<KarenTorretasPruebas>();
+            GunClass torreta = other.GetComponent<GunClass>();
             if (torreta == null)
             {
-                Debug.LogWarning("No encontro la clase KarenTorretasPruebas");
+                Debug.LogWarning("No encontro la clase GunClass");
                 return;
             }
             if (torretasConectadas.Contains(torreta))
@@ -205,24 +113,27 @@ public class Faros : MonoBehaviour
     {
         if (!estaConectada || torretasConectadas.Count == 0)
         {
+            ApEn = false;
             Debug.Log("La Bobina no está conectada o no hay torretas en el rango.");
             return;
         }
 
         //float energiaDisponible = EnergiaTotal;
         Central2.instance.ResetEenergia();
-        foreach (KarenTorretasPruebas torreta in torretasConectadas)
+        foreach (GunClass torreta in torretasConectadas)
         {
             if (CentralElectrica.energiaTotalCentral >= torreta.energyConsumed)
             {
                 //torreta.Energia = torreta.energyConsumed;
                 //energiaDisponible -= torreta.energyConsumed;
                 Central2.instance.GastarEnergia(torreta.energyConsumed);
+                ApEn = true;
                 Debug.Log($"Torreta: {torreta.name}: Activada, energía restante: {CentralElectrica.energiaTotalCentral}%");
             }
             else
             {
                 //torreta.Energia = 0;
+                ApEn = false;
                 Debug.Log($"Torreta: {torreta.name}: Sin energía suficiente.");
             }
         }
