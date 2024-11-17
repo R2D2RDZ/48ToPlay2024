@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3370124861920972853}
   - component: {fileID: 48532035110004497}
   m_Layer: 6
-  m_Name: EnemyFuerte
+  m_Name: EnemyJinete
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,11 +48,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
-  life: 20
-  speed: 0.75
+  life: 5
+  speed: 1.5
   reachDistance: 0.1
-  maxSpeed: 0.75
-  damage: 15
+  maxSpeed: 1.5
+  damage: 10
   isVisible: 0
   currentNavPoint: 1
   points: {fileID: 0}
@@ -202,7 +202,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.15826035, b: 1, a: 1}
+  m_Color: {r: 0.03786591, g: 0.381132, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

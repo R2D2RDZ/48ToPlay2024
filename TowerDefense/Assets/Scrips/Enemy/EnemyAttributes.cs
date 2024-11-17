@@ -8,13 +8,15 @@ public class EnemyAttributes : MonoBehaviour
     public float life = 10;
     public float speed = 10;
     public float reachDistance = 0.2f;
-    public int maxSpeed = 10;
+    public float maxSpeed = 10;
     public float damage = 10;
     public bool isVisible = false;
 
     public int currentNavPoint = 1;
     private Rigidbody2D rb2d;
     public LevelCreator points;
+
+    private Vector2 lastMovDir = Vector2.zero;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,8 @@ public class EnemyAttributes : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-      if (!(points.NavPoints.Length == 0) || !(currentNavPoint >= points.NavPoints.Length))
+
+        if (!(points.NavPoints.Length == 0) || !(currentNavPoint >= points.NavPoints.Length))
         {
             MoveToNextNavPoint();
         }
@@ -67,4 +70,14 @@ public class EnemyAttributes : MonoBehaviour
         }
     }
 
+//Dañar al player
+    void OnCollisionEnter2D(Collision2D other){
+        var central = other.gameObject.GetComponent<CentralElectrica>();
+        if (central != null)
+            {        
+                Player.Instance.DamageReceive(damage);
+                Die();
+            }
+    }
 }
+
