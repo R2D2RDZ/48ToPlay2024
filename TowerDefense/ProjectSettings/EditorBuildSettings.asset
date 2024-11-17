@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PantalladeInicio.unity
     guid: bd9086c6a66b1264992d6f45ea255c93
+  - enabled: 1
+    path: Assets/Scenes/Carga.unity
+    guid: 05d5543163abf4c428ded0a0614f26fe
   m_configObjects: {}
