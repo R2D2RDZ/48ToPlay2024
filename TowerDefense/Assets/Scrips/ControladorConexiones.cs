@@ -181,15 +181,33 @@ public class ControladorConexiones : MonoBehaviour
     {
         cables.Remove(cable);
         Destroy(cable.gameObject);
-        Faros farosInstance = GetComponent<Faros>();
-        if (farosInstance != null)
+
+        //Nuevo:
+        cables.Remove(cable);
+        Destroy(cable.gameObject);
+
+        // Obtener las posiciones de los extremos del cable para identificar las bobinas
+        Vector3 posicionInicio = cable.GetPosition(0);
+        Vector3 posicionFin = cable.GetPosition(1);
+
+        // Buscar las bobinas en las posiciones correspondientes
+        Faros bobinaInicio = BuscarBobinaEnPosicion(posicionInicio);
+        Faros bobinaFin = BuscarBobinaEnPosicion(posicionFin);
+
+        if (bobinaInicio != null && bobinaFin != null)
         {
-            farosInstance.DesconectarDeCentral(); // Llama a DesconectarDeCentral
+            // Desconectar las bobinas entre sí
+            bobinaInicio.bobinasConectadas.Remove(bobinaFin);
+            bobinaFin.bobinasConectadas.Remove(bobinaInicio);
+
+            // Actualizar el estado de conexión y la energía
+            bobinaInicio.DesconectarDeCentral();
+            bobinaFin.DesconectarDeCentral();
         }
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    /*private void OnTriggerEnter2D(Collider2D other)
     {
         // Comprobar si un enemigo colisiona con un cable
         if (other.CompareTag("Enemigo"))
@@ -203,5 +221,17 @@ public class ControladorConexiones : MonoBehaviour
                 }
             }
         }
+    }*/
+
+    // Método auxiliar para buscar una bobina en una posición dada
+    Faros BuscarBobinaEnPosicion(Vector3 posicion)
+    {
+        // Realiza un raycast o una búsqueda para encontrar la bobina en la posición especificada
+        RaycastHit2D hit = Physics2D.Raycast(posicion, Vector2.zero, 0f, LayerMask);
+        if (hit.collider != null)
+        {
+            return hit.collider.GetComponent<Faros>();
+        }
+        return null;
     }
 }
