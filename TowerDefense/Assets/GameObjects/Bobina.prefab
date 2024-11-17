@@ -103,9 +103,6 @@ MonoBehaviour:
   centralElectrica: {fileID: 0}
   EnergiaTotal: 100
   bobinasConectadas: []
-  Torres: {fileID: 0}
-  ApEn: 0
-  gunInstance: {fileID: 0}
 --- !u!50 &588648214328596524
 Rigidbody2D:
   serializedVersion: 4
@@ -165,9 +162,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07998723}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.2455876
+  m_Radius: 4
 --- !u!114 &2011273169079893865
 MonoBehaviour:
   m_ObjectHideFlags: 0
