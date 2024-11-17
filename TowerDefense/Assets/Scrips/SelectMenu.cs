@@ -13,6 +13,7 @@ public class SelectMenu : MonoBehaviour
     [SerializeField] LayerMask layerMask;
 
     private GameObject currentDropdownMenu;
+    private GameObject gun;
 
     void Update()
     {
@@ -46,13 +47,15 @@ public class SelectMenu : MonoBehaviour
                         );
 
                     menuRect.anchoredPosition = canvasPoint;
-                    CreateOptions(hit.collider.tag, currentDropdownMenu, spawnPosition);
+                    gun = hit.collider.gameObject;
+                    CreateOptions(hit.collider.tag, currentDropdownMenu, spawnPosition,  gun);
+                    
                 }
 
             }
         }
     }
-    void CreateOptions(string tag, GameObject menu, Vector3 worldPosition)
+    void CreateOptions(string tag, GameObject menu, Vector3 worldPosition, GameObject delete)
     {
         RectTransform rectTransform = menu.GetComponent<RectTransform>();
         Vector3 menuPosition = rectTransform.position;
@@ -73,6 +76,27 @@ public class SelectMenu : MonoBehaviour
                 Light.GetComponent<RectTransform>().position = menuPosition + Vector3.right;
                 Light.GetComponent<CreateTower>().Tower = towers[2];
                 Light.GetComponent<CreateTower>().Position = worldPosition;
+                break;
+
+            case "Gun":
+                GameObject Rapid = Instantiate(optionPrefab, menu.transform);
+                Rapid.GetComponent<RectTransform>().position = menuPosition + Vector3.up;
+                Rapid.GetComponent<CreateTower>().Tower = towers[3];
+                Rapid.GetComponent<CreateTower>().Position = worldPosition;
+                Rapid.GetComponent<CreateTower>().delete = delete;
+
+                GameObject Sniper = Instantiate(optionPrefab, menu.transform);
+                Sniper.GetComponent<RectTransform>().position = menuPosition + Vector3.left;
+                Sniper.GetComponent<CreateTower>().Tower = towers[4];
+                Sniper.GetComponent<CreateTower>().Position = worldPosition;
+                Sniper.GetComponent<CreateTower>().delete = delete;
+
+                GameObject Taser = Instantiate(optionPrefab, menu.transform);
+                Taser.GetComponent<RectTransform>().position = menuPosition + Vector3.right;
+                Taser.GetComponent<CreateTower>().Tower = towers[5];
+                Taser.GetComponent<CreateTower>().Position = worldPosition;
+                Taser.GetComponent<CreateTower>().delete = delete;
+
                 break;
         }
     }

@@ -42,6 +42,7 @@ public class GunClass : MonoBehaviour {
 				//Debug.Log("No hay Enemigos");
 				return;
 			}
+			Debug.Log("Spawn bala");
 			Vector3 enemyPosition = enemyTarget.transform.position;
 			Vector3 myPosition = transform.position;
 			Vector3 trayectoria = new Vector3(enemyPosition.x - myPosition.x, enemyPosition.y - myPosition.y, enemyPosition.z).normalized;
