@@ -2,20 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SelectMenu : MonoBehaviour
 {
     [SerializeField] GameObject dropdownMenuPrefab; // Assign your dropdown menu prefab here
     [SerializeField] GameObject optionPrefab;
 
+    [SerializeField] GameObject[] towers;
+
+    [SerializeField] LayerMask layerMask;
+
     private GameObject currentDropdownMenu;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Left-click
+        if (Input.GetMouseButtonDown(0) && !IsPointerOverUIElement()) // Left-click
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, layerMask);
             Debug.Log("Casting ray");
 
             if (hit.collider != null) // Detect collider under the mouse
@@ -44,24 +49,39 @@ public class SelectMenu : MonoBehaviour
                     );
 
                     menuRect.anchoredPosition = canvasPoint;
-                    CreateOptions(hit.collider.tag, currentDropdownMenu);
+                    CreateOptions(hit.collider.tag, currentDropdownMenu, spawnPosition);
                 }
                 
             }
         }
     }
 
-    void CreateOptions(string tag, GameObject menu)
+    void CreateOptions(string tag, GameObject menu, Vector3 worldPosition)
     {
+        RectTransform rectTransform = menu.GetComponent<RectTransform>();
+        Vector3 menuPosition = rectTransform.position;
         switch (tag) {
             case "Free": 
                 GameObject Turret = Instantiate(optionPrefab, menu.transform);
-                Turret.GetComponent<RectTransform>().position = menu.GetComponent<RectTransform>().position + Vector3.up * 30;
+                Turret.GetComponent<RectTransform>().position = menuPosition + Vector3.up;
+                Turret.GetComponent<CreateTower>().Tower = towers[0];
+                Turret.GetComponent<CreateTower>().Position = worldPosition;
+
                 GameObject Pylon = Instantiate(optionPrefab, menu.transform);
-                Pylon.GetComponent<RectTransform>().position = menu.GetComponent<RectTransform>().position + Vector3.left * 30;
+                Pylon.GetComponent<RectTransform>().position = menuPosition + Vector3.left;
+                Pylon.GetComponent<CreateTower>().Tower = towers[1];
+                Pylon.GetComponent<CreateTower>().Position = worldPosition;
+
                 GameObject Light = Instantiate(optionPrefab, menu.transform);
-                Light.GetComponent<RectTransform>().position = menu.GetComponent<RectTransform>().position + Vector3.right * 30;
+                Light.GetComponent<RectTransform>().position = menuPosition + Vector3.right;
+                Light.GetComponent<CreateTower>().Tower = towers[2];
+                Light.GetComponent<CreateTower>().Position = worldPosition;
                 break;
         }
+    }
+
+    private bool IsPointerOverUIElement()
+    {
+        return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
     }
 }

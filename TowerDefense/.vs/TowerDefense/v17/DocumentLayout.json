@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\selectmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\r2d2r\\onedrive\\documentos\\unity projects\\48toplay2024\\towerdefense\\assets\\libraries\\r2d2rdz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\libraries\\r2d2rdz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\assets\\scrips\\enemy\\bossattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\enemy\\bossattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -53,8 +57,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "R2D2RDZ.cs",
+              "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Libraries\\R2D2RDZ.cs",
+              "RelativeDocumentMoniker": "Assets\\Libraries\\R2D2RDZ.cs",
+              "ToolTip": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Libraries\\R2D2RDZ.cs",
+              "RelativeToolTip": "Assets\\Libraries\\R2D2RDZ.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T00:57:01.427Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -63,14 +80,14 @@
               "RelativeDocumentMoniker": "Assets\\Scrips\\SelectMenu.cs",
               "ToolTip": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\SelectMenu.cs",
               "RelativeToolTip": "Assets\\Scrips\\SelectMenu.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAIAwwEAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAIAwwDcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T22:24:26.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BossAttributes.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Enemy\\BossAttributes.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\Enemy\\BossAttributes.cs",
@@ -82,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\Player.cs",
@@ -94,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "KarenTorretasPruebas.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\KarenTorretasPruebas.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\KarenTorretasPruebas.cs",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CentralElectrica.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\CentralElectrica.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\CentralElectrica.cs",
@@ -118,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ControladorConexiones.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\ControladorConexiones.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\ControladorConexiones.cs",
@@ -130,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Faros.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Faros.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\Faros.cs",
@@ -142,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ProjectileClass.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\ProjectileClass.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\ProjectileClass.cs",
@@ -154,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GunClass.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\GunClass.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\GunClass.cs",
@@ -166,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LevelCreator.cs",
               "DocumentMoniker": "C:\\Users\\R2D2R\\OneDrive\\Documentos\\Unity projects\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\LevelCreator.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\LevelCreator.cs",
@@ -178,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EnemyAttributes.cs",
               "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\EnemyAttributes.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\EnemyAttributes.cs",

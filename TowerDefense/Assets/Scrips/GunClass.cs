@@ -90,4 +90,9 @@ public class GunClass : MonoBehaviour {
 			Debug.Log("No hay enemigos");
 		}
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("El arma esta colisionando con " + collision.gameObject.name);
+    }
 }
