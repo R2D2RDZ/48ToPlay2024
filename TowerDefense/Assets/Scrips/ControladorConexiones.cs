@@ -181,6 +181,12 @@ public class ControladorConexiones : MonoBehaviour
     {
         cables.Remove(cable);
         Destroy(cable.gameObject);
+        Faros farosInstance = GetComponent<Faros>();
+        if (farosInstance != null)
+        {
+            farosInstance.DesconectarDeCentral(); // Llama a DesconectarDeCentral
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
