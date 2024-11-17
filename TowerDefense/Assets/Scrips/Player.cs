@@ -5,28 +5,28 @@ using UnityEngine;
 public class Player
 {
     // Propiedades de la clase
-    public int Hp { get; private set; }
+    public float Hp { get; private set; }
     public int Electrum { get; private set; }
 
-    // Instancia única
+    // Instancia ï¿½nica
     private static Player instance;
 
     // Objeto para el bloqueo en caso de uso en hilos
     private static readonly object lockObj = new object();
 
-    // Constructor privado para evitar instanciación externa
+    // Constructor privado para evitar instanciaciï¿½n externa
     private Player()
     {
         Hp = 100;       // Valor inicial de ejemplo
         Electrum = 50;  // Valor inicial de ejemplo
     }
 
-    // Propiedad para obtener la única instancia
+    // Propiedad para obtener la ï¿½nica instancia
     public static Player Instance
     {
         get
         {
-            // Implementación con bloqueo para asegurar que sea thread-safe
+            // Implementaciï¿½n con bloqueo para asegurar que sea thread-safe
             if (instance == null)
             {
                 lock (lockObj)
@@ -41,15 +41,22 @@ public class Player
         }
     }
 
-    // Método para recibir daño
-    public void DamageReceive(int damage)
+    // Mï¿½todo para recibir daï¿½o
+    public void DamageReceive(float damage)
     {
         Hp -= damage;
+        if(Hp <= 0){
+            gameOver();
+        }
     }
 
-    // Método para añadir electrum
+    // Mï¿½todo para aï¿½adir electrum
     public void AddElectrum(int amount)
     {
         Electrum += amount;
+    }
+
+    public void gameOver(){
+        //en el canvas le dice que ya perdiste
     }
 }
