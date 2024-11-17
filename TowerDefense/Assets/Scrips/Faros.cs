@@ -112,7 +112,6 @@ public class Faros : MonoBehaviour
     public void DesconectarDeCentral()
     {
         estaConectada = false; // Marca la bobina como desconectada
-        gunInstance.isOn = false; // Desactiva el estado de encendido
 
         // Desactiva todas las torretas conectadas
         foreach (GunClass torreta in torretasConectadas)
@@ -130,7 +129,13 @@ public class Faros : MonoBehaviour
     {
         if (!estaConectada || torretasConectadas.Count == 0)
         {
-            gunInstance.isOn = false;
+            foreach (GunClass torreta in torretasConectadas)
+            {
+                if (torreta != null)
+                {
+                    torreta.isOn = false; // Desactiva la torreta
+                }
+            }
             DesconectarDeCentral();
             Debug.Log("La Bobina no está conectada o no hay torretas en el rango.");
             return;
@@ -142,9 +147,6 @@ public class Faros : MonoBehaviour
         {
             if (CentralElectrica.energiaTotalCentral >= torreta.energyConsumed)
             {
-                //torreta.Energia = torreta.energyConsumed;
-                //energiaDisponible -= torreta.energyConsumed;
-                //ApEn = true;
                 if (torreta != null)
                 {
                     // Modifica la variable isOn
@@ -155,12 +157,10 @@ public class Faros : MonoBehaviour
             }
             else
             {
-                //torreta.Energia = 0;
-                //ApEn = false;
                 if (torreta != null)
                 {
                     // Modifica la variable isOn
-                    gunInstance.isOn = false;
+                    torreta.isOn = false;
                 }
                 Debug.Log($"Torreta: {torreta.name}: Sin energía suficiente.");
             }
