@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement; // Necesario para usar SceneManager
 
 public class SceneChanger : MonoBehaviour
 {
-    // Método para cambiar a la escena del nivel 1
-    public void CambiarANivel1()
+    public void CambiarANivel1ConCarga()
     {
-        SceneManager.LoadScene("Test Map");
+        StartCoroutine(CargarEscenaConRetraso("Test Map")); // Llama a la corrutina
+    }
+
+    // Corrutina para manejar la pantalla de carga y el retraso
+    private IEnumerator CargarEscenaConRetraso(string escena)
+    {
+        SceneManager.LoadScene("PantallaDeCarga"); // Cambia a la pantalla de carga
+        yield return new WaitForSeconds(5); // Espera 5 segundos
+        SceneManager.LoadScene(escena); // Luego carga la escena del juego
     }
 
     // Método para salir del juego
