@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scrips\Guns\Sniper.cs" />
+    <Compile Include="Assets\Scrips\EnemyLineDestroy.cs" />
     <Compile Include="Assets\Scrips\Enemy\HackerAttributes.cs" />
     <Compile Include="Assets\Scrips\ControladorConexiones.cs" />
     <Compile Include="Assets\Scrips\Enemy\EnemySpawner.cs" />
