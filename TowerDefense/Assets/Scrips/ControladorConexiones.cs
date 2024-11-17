@@ -106,7 +106,7 @@ using static UnityEditor.PlayerSettings;
 
 public class ControladorConexiones : MonoBehaviour
 {
-    private Faros primeraBobina;
+    private NewFaros primeraBobina;
     public LineRenderer cablePrefab;
     public LayerMask LayerMask;
     private List<LineRenderer> cables = new List<LineRenderer>(); // Lista para almacenar los cables creados
@@ -128,8 +128,8 @@ public class ControladorConexiones : MonoBehaviour
                     return;
                 }
 
-                Faros bobinaSeleccionada = hit.collider.GetComponent<Faros>();
-                CentralElectrica centralSeleccionada = hit.collider.GetComponent<CentralElectrica>();
+                NewFaros bobinaSeleccionada = hit.collider.GetComponent<NewFaros>();
+                //CentralElectrica centralSeleccionada = hit.collider.GetComponent<CentralElectrica>();
 
                 if (bobinaSeleccionada != null)
                 {
@@ -141,18 +141,11 @@ public class ControladorConexiones : MonoBehaviour
                     else
                     {
                         // Conectar las Bobinas y crear el cable
-                        primeraBobina.ConectarABobina(bobinaSeleccionada);
+                        primeraBobina.Conectar(bobinaSeleccionada);
                         CrearCable(primeraBobina, bobinaSeleccionada);
                         primeraBobina = null;
                         Debug.Log(bobinaSeleccionada.name);
                     }
-                }
-                else if (centralSeleccionada != null && primeraBobina != null)
-                {
-                    // Conectar la Bobina a la Central Eléctrica
-                    centralSeleccionada.ConectarBobina(primeraBobina);
-                    CrearCable(primeraBobina, centralSeleccionada);
-                    primeraBobina = null;
                 }
             }
         }
@@ -179,6 +172,7 @@ public class ControladorConexiones : MonoBehaviour
 
     void DestruirCable(LineRenderer cable)
     {
+        if ()
         cables.Remove(cable);
         Destroy(cable.gameObject);
     }
