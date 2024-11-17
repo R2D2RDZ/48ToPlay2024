@@ -31,7 +31,7 @@ public class BossAttributes : MonoBehaviour
         while(true){
             Debug.Log("HA NACIDO");
             Instantiate(hijo, atributos.points.NavPoints[atributos.currentNavPoint-1], transform.rotation);
-            hijo.GetComponent<EnemyAttributes>().currentNavPoint = atributos.currentNavPoint;
+            hijo.GetComponent<EnemyAttributes>().currentNavPoint = atributos.currentNavPoint+1;
             yield return new WaitForSeconds(birthTime);
         }
     }

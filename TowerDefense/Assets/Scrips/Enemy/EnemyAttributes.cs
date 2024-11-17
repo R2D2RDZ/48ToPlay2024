@@ -25,7 +25,7 @@ public class EnemyAttributes : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!(points.NavPoints.Length == 0) || !(currentNavPoint >= points.NavPoints.Length))
+      if (!(points.NavPoints.Length == 0) || !(currentNavPoint >= points.NavPoints.Length))
         {
             MoveToNextNavPoint();
         }

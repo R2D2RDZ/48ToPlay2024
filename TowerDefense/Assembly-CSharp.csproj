@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scrips\Faros.cs" />
     <Compile Include="Assets\Scrips\SelectMenu.cs" />
     <Compile Include="Assets\Scrips\CentralElectrica.cs" />
+    <Compile Include="Assets\Libraries\R2D2RDZ.cs" />
     <Compile Include="Assets\Scrips\LightClass.cs" />
     <Compile Include="Assets\Scrips\KarenTorretasPruebas.cs" />
     <Compile Include="Assets\Scripts\LightTowerTrigger.cs" />
