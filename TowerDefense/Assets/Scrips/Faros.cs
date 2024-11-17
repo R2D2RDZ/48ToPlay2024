@@ -11,8 +11,6 @@ public class Faros : MonoBehaviour
     public static List<GunClass> torretasConectadas = new();
     private bool estaConectada = false; // Indica si la bobina está conectada a la Central Eléctrica
     public List<Faros> bobinasConectadas = new();
-    public GunClass Torres;
-    public bool ApEn;
     public GunClass gunInstance;
 
     void Start()
@@ -115,7 +113,7 @@ public class Faros : MonoBehaviour
     {
         if (!estaConectada || torretasConectadas.Count == 0)
         {
-            ApEn = false;
+            gunInstance.isOn = false;
             Debug.Log("La Bobina no está conectada o no hay torretas en el rango.");
             return;
         }

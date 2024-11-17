@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c49501a731d0c144bc8b81eb3f656ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cablePrefab: {fileID: 0}
+  cablePrefab: {fileID: 8099570442585679377, guid: a190710f7c777b742949d4bdc53b16dc, type: 3}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 0

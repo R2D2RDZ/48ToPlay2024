@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5555297273543114301}
   - component: {fileID: 3457739795074705574}
   - component: {fileID: 2140864268617215848}
-  - component: {fileID: 7966880291697046470}
   - component: {fileID: 588648214328596524}
   - component: {fileID: 5664644367803769244}
+  - component: {fileID: 2011273169079893865}
   m_Layer: 0
   m_Name: Bobina
   m_TagString: Untagged
@@ -102,53 +102,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   centralElectrica: {fileID: 0}
   EnergiaTotal: 100
-  bobinasConectadas:
-  - {fileID: 0}
---- !u!61 &7966880291697046470
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8783916657847331078}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.040079415, y: 0.017538548}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.454791, y: 2.6581936}
-  m_EdgeRadius: 0
+  bobinasConectadas: []
+  Torres: {fileID: 0}
+  ApEn: 0
+  gunInstance: {fileID: 0}
 --- !u!50 &588648214328596524
 Rigidbody2D:
   serializedVersion: 4
@@ -211,3 +168,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.07998723}
   serializedVersion: 2
   m_Radius: 1.2455876
+--- !u!114 &2011273169079893865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8783916657847331078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c49501a731d0c144bc8b81eb3f656ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cablePrefab: {fileID: 8099570442585679377, guid: a190710f7c777b742949d4bdc53b16dc, type: 3}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 1

@@ -99,8 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0ac387472dc48408d7b6dbcb308314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bobinasConectadas:
-  - {fileID: 0}
+  bobinasConectadas: []
 --- !u!61 &2943436218966379827
 BoxCollider2D:
   m_ObjectHideFlags: 0
