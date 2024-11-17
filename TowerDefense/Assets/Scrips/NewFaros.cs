@@ -8,13 +8,48 @@ public class NewFaros : MonoBehaviour
     public List<NewFaros> bobinasConectadas = new List<NewFaros>();
 
     [SerializeField] bool estaConectada = false;
-    [SerializeField] bool estaConCentral = false;
+    [SerializeField] bool EsCentral = false;
     [SerializeField] bool isCentral;
 
-    
 
+    public bool Conectar(NewFaros faro)
+    {
+        if (!bobinasConectadas.Contains(faro))
+        {
+            bobinasConectadas.Add(faro);
+            RevisarConexion();
+            return true;
+        }
+        return false;
+    }
 
+    public bool Desconectar(NewFaros faro)
+    {
+        if (bobinasConectadas.Contains(faro))
+        {
+            bobinasConectadas.Remove(faro);
+            RevisarConexion() ;
+            return true;
+        }
+        return false;
+    }
 
+    void RevisarConexion()
+    {
+        foreach (NewFaros bobina in bobinasConectadas) {
+            if (bobina.estaConectada || bobina.EsCentral)
+            {
+                estaConectada = true;
+                break;
+            }
+            else estaConectada = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        RevisarConexion();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

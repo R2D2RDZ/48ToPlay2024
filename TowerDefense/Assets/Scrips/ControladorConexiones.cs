@@ -162,9 +162,10 @@ public class ControladorConexiones : MonoBehaviour
     {
         LineRenderer cable = Instantiate(cablePrefab);
         cable.positionCount = 2;
-        
-        cable.SetPosition(0, origen.transform.position);
-        cable.SetPosition(1, destino.transform.position);
+        float radio = Vector3.Distance(origen.transform.position, destino.transform.position);
+        cable.SetPosition(0, Vector3.left * radio);
+        cable.SetPosition(1, Vector3.right * radio);
+        cable.transform.position = (origen.transform.position + destino.transform.position) / 2;
 
         // Agregar un Collider2D al cable para detectar clics y colisiones
         BoxCollider2D collider = cable.gameObject.AddComponent<BoxCollider2D>();

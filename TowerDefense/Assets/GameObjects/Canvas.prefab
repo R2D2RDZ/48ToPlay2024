@@ -100,7 +100,7 @@ MonoBehaviour:
   dropdownMenuPrefab: {fileID: 8333944837352662576, guid: 0d0b71181ca85474b9deca352aae593a, type: 3}
   optionPrefab: {fileID: 545430879470118601, guid: 05a4eefbbdcaa4241abee6b8c89a55ed, type: 3}
   towers:
-  - {fileID: 803661210994437571, guid: b191612939c86b94bb92e002ebb751fc, type: 3}
+  - {fileID: 803661210994437571, guid: 9ca173288b27b35408950e854d76dc99, type: 3}
   - {fileID: 8783916657847331078, guid: 237c2587370e87f40b87a6ade58b78ef, type: 3}
   - {fileID: 9084582702333659333, guid: f273c042a4a48b6428019ec70c933db3, type: 3}
   layerMask:

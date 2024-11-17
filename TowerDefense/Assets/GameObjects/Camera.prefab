@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4083537657758574986}
   - component: {fileID: 17447337072060742}
   - component: {fileID: 6711490299983552457}
+  - component: {fileID: -7000813915847293461}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -154,3 +155,19 @@ MonoBehaviour:
   - {fileID: 7076356176168397449, guid: ccd53e8328bd9984dbb94b8c6931cd32, type: 3}
   - {fileID: 7076356176168397449, guid: 29175deb17faf8f48bdb73ddcbd8228b, type: 3}
   NavPoints: []
+--- !u!114 &-7000813915847293461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5093534835616141144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c49501a731d0c144bc8b81eb3f656ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cablePrefab: {fileID: 8099570442585679377, guid: a190710f7c777b742949d4bdc53b16dc, type: 3}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 1
