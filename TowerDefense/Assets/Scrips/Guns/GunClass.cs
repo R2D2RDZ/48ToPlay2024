@@ -23,7 +23,7 @@ public class GunClass : MonoBehaviour {
 	//[SerializeField]
 	public GameObject projectile;
 	public GameObject flash;
-	List<GameObject> listEnemy;
+	public List<GameObject> listEnemy;
 	//
 
 	public virtual void Attack() {

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8285470149712522730}
   - component: {fileID: 8758995182902083649}
   - component: {fileID: 2257213030693080503}
-  - component: {fileID: 4954949258251545160}
   - component: {fileID: 1487536067671083194}
+  - component: {fileID: 2450796321985518942}
   - component: {fileID: 4622493034650824650}
   m_Layer: 0
   m_Name: Sniper
@@ -127,28 +127,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 8
---- !u!114 &4954949258251545160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081732146279046531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37bd3934e33e3b4080f4cfdec2525c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  cooldown: 65
-  speed: 150
-  isEnabled: 1
-  time: 0
-  cost: 1
-  energyConsumed: 1
-  isOn: 1
-  projectile: {fileID: 3139875410049840756, guid: 564afec97fdecd14985fa2d30ee27df5, type: 3}
-  flash: {fileID: 0}
 --- !u!50 &1487536067671083194
 Rigidbody2D:
   serializedVersion: 4
@@ -176,6 +154,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &2450796321985518942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081732146279046531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af828a6317470d146a8cdefc19cfef9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  cooldown: 75
+  speed: 50
+  isEnabled: 1
+  time: 0
+  cost: 0
+  energyConsumed: 1
+  projectile: {fileID: 3139875410049840756, guid: 564afec97fdecd14985fa2d30ee27df5, type: 3}
+  flash: {fileID: 0}
+  listEnemy: []
 --- !u!61 &4622493034650824650
 BoxCollider2D:
   m_ObjectHideFlags: 0
