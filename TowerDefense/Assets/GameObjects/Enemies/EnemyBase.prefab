@@ -54,7 +54,7 @@ MonoBehaviour:
   maxSpeed: 10
   damage: 10
   isVisible: 0
-  currentNavPoint: 2
+  currentNavPoint: 1
   points: {fileID: 0}
 --- !u!61 &3370124861920972853
 BoxCollider2D:
