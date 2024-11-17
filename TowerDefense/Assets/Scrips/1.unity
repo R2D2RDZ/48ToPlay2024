@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 40372073}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,10 +158,11 @@ MonoBehaviour:
   cooldown: 1
   speed: 5
   isEnabled: 1
+  time: 0
   cost: 0
   energyConsumed: 50
-  isOn: 1
   projectile: {fileID: 0}
+  flash: {fileID: 0}
 --- !u!58 &40372074
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1129,6 +1130,8 @@ MonoBehaviour:
   centralElectrica: {fileID: 0}
   EnergiaTotal: 0
   bobinasConectadas: []
+  Torres: {fileID: 0}
+  ApEn: 0
 --- !u!212 &1138931203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1232,6 +1235,8 @@ MonoBehaviour:
   centralElectrica: {fileID: 0}
   EnergiaTotal: 0
   bobinasConectadas: []
+  Torres: {fileID: 0}
+  ApEn: 0
 --- !u!212 &1679184654
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1813,6 +1818,8 @@ MonoBehaviour:
   centralElectrica: {fileID: 0}
   EnergiaTotal: 0
   bobinasConectadas: []
+  Torres: {fileID: 0}
+  ApEn: 0
 --- !u!212 &1999409558
 SpriteRenderer:
   m_ObjectHideFlags: 0
