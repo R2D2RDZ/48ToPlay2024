@@ -11,7 +11,7 @@ public class Faros : MonoBehaviour
     public static List<GunClass> torretasConectadas = new();
     private bool estaConectada = false; // Indica si la bobina está conectada a la Central Eléctrica
     public List<Faros> bobinasConectadas = new();
-    public GunClass gunInstance;
+    //public GunClass gunInstance;
 
     void Start()
     {
@@ -111,6 +111,7 @@ public class Faros : MonoBehaviour
 
     public void DesconectarDeCentral()
     {
+        Debug.Log("DesconectarDeCentral() fue llamado.");
         estaConectada = false; // Marca la bobina como desconectada
 
         // Desactiva todas las torretas conectadas
@@ -119,7 +120,9 @@ public class Faros : MonoBehaviour
             if (torreta != null)
             {
                 torreta.isOn = false; // Desactiva la torreta
+                Debug.Log($"{torreta.name} fue desactivada."); // Mensaje para depurar
             }
+            Debug.Log("La Bobina se ha desconectado y todas las torretas deberían estar desactivadas.");
         }
 
         Debug.Log("La Bobina se ha desconectado de la Central Eléctrica y todas las torretas están desactivadas.");
@@ -129,13 +132,6 @@ public class Faros : MonoBehaviour
     {
         if (!estaConectada || torretasConectadas.Count == 0)
         {
-            foreach (GunClass torreta in torretasConectadas)
-            {
-                if (torreta != null)
-                {
-                    torreta.isOn = false; // Desactiva la torreta
-                }
-            }
             DesconectarDeCentral();
             Debug.Log("La Bobina no está conectada o no hay torretas en el rango.");
             return;
@@ -160,8 +156,9 @@ public class Faros : MonoBehaviour
                 if (torreta != null)
                 {
                     // Modifica la variable isOn
-                    torreta.isOn = false;
+                    torreta.isOn = false; 
                 }
+                Debug.Log("Todas las torretas deberían estar desactivadas.");
                 Debug.Log($"Torreta: {torreta.name}: Sin energía suficiente.");
             }
         }

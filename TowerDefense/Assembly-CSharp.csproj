@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scrips\Enemy\EnemyAttributes.cs" />
     <Compile Include="Assets\Scrips\Central#2.cs" />
     <Compile Include="Assets\Scrips\CreateTower.cs" />
+    <Compile Include="Assets\Scrips\NewFaros.cs" />
     <Compile Include="Assets\Scrips\Faros.cs" />
     <Compile Include="Assets\Scrips\SelectMenu.cs" />
     <Compile Include="Assets\Scrips\CentralElectrica.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Scripts\LightTowerTrigger.cs" />
     <Compile Include="Assets\Scrips\ProjectileClass.cs" />
     <Compile Include="Assets\Scrips\Enemy\BossAttributes.cs" />
+    <Compile Include="Assets\Scrips\TaserProjectile.cs" />
     <Compile Include="Assets\Scrips\Player.cs" />
     <Compile Include="Assets\Scrips\LevelCreator.cs" />
   </ItemGroup>
