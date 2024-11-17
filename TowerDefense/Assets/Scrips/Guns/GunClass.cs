@@ -26,7 +26,7 @@ public class GunClass : MonoBehaviour {
 	List<GameObject> listEnemy;
 	//
 
-	void Attack() {
+	public virtual void Attack() {
 		if (listEnemy.Count > 0) {
 			Debug.Log("Hay hay  Enemigos");
 
