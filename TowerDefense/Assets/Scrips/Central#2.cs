@@ -18,6 +18,7 @@ public class Central2
     {
         CentralElectrica.energiaTotalCentral = 100.0f;
         energiaMax = 100f;
+        energiaDisponible = energiaMax;
     }
 
     // Propiedad para obtener la única instancia

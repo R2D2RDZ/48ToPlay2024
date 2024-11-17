@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scrips\Guns\Shotgun.cs" />
     <Compile Include="Assets\Scrips\Guns\GunClass.cs" />
     <Compile Include="Assets\Scrips\KarenTorretasPruebas.cs" />
+    <Compile Include="Assets\Scripts\LineData.cs" />
     <Compile Include="Assets\Scripts\LightTowerTrigger.cs" />
     <Compile Include="Assets\Scrips\ProjectileClass.cs" />
     <Compile Include="Assets\Scrips\Enemy\BossAttributes.cs" />

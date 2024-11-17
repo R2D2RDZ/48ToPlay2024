@@ -8,16 +8,17 @@ public class NewFaros : MonoBehaviour
     public List<NewFaros> bobinasConectadas = new List<NewFaros>();
 
     [SerializeField] bool estaConectada = false;
-    [SerializeField] bool EsCentral = false;
     [SerializeField] bool isCentral;
 
 
     public bool Conectar(NewFaros faro)
     {
+        Debug.Log(bobinasConectadas.Count);
         if (!bobinasConectadas.Contains(faro))
         {
             bobinasConectadas.Add(faro);
             RevisarConexion();
+            Debug.Log(gameObject.name + " conectado con " + faro.name);
             return true;
         }
         return false;
@@ -28,7 +29,9 @@ public class NewFaros : MonoBehaviour
         if (bobinasConectadas.Contains(faro))
         {
             bobinasConectadas.Remove(faro);
+            estaConectada = false;
             RevisarConexion() ;
+            Debug.Log(gameObject.name + " desconectado con " + faro.name);
             return true;
         }
         return false;
@@ -37,7 +40,7 @@ public class NewFaros : MonoBehaviour
     void RevisarConexion()
     {
         foreach (NewFaros bobina in bobinasConectadas) {
-            if (bobina.estaConectada || bobina.EsCentral)
+            if (bobina.estaConectada || bobina.isCentral)
             {
                 estaConectada = true;
                 break;
@@ -45,10 +48,18 @@ public class NewFaros : MonoBehaviour
             else estaConectada = false;
         }
     }
+    void OnOffTorretas()
+    {
+        foreach (GunClass torreta in torretasConectadas)
+        {
+            torreta.isOn = estaConectada;
+        }
+    }
 
     private void FixedUpdate()
     {
         RevisarConexion();
+        OnOffTorretas();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -104,7 +115,7 @@ public class NewFaros : MonoBehaviour
                 Debug.Log("Energia restante: " + Central2.instance.energiaDisponible);
             }
             else {
-                Debug.Log("Energia faltante");
+                Debug.Log("Energia faltante. Disponible" );
             }
         }
         else
