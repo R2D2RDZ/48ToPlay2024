@@ -237,7 +237,7 @@ public class ControladorConexiones : MonoBehaviour
     Faros BuscarBobinaEnPosicion(Vector3 posicion)
     {
         // Realiza un raycast o una búsqueda para encontrar la bobina en la posición especificada
-        RaycastHit2D hit = Physics2D.Raycast(posicion, Vector2.zero, 0f, LayerMask);
+        RaycastHit2D hit = Physics2D.Raycast(posicion, Vector2.zero, 0f, layerMask);
         if (hit.collider != null)
         {
             return hit.collider.GetComponent<Faros>();
