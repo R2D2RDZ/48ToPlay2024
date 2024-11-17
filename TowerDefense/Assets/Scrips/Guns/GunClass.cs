@@ -19,7 +19,7 @@ public class GunClass : MonoBehaviour {
 	//[SerializeField]
 	public float cost;
 	public float energyConsumed = 1;
-	public bool isOn = true;
+	public static bool isOn = true;
 	//[SerializeField]
 	public GameObject projectile;
 	public GameObject flash;
@@ -39,7 +39,7 @@ public class GunClass : MonoBehaviour {
 				}
 			}
 			if (enemyTarget == null) {
-				Debug.Log("No hay Enemigos");
+				//Debug.Log("No hay Enemigos");
 				return;
 			}
 			Vector3 enemyPosition = enemyTarget.transform.position;

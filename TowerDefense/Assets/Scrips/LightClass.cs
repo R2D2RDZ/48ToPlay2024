@@ -22,10 +22,10 @@ public class LightClass : MonoBehaviour
 	}
 	private void FixedUpdate() {
         if(isEnabled && isOn){
-            GetComponent<CircleCollider2D>().enabled = true;
+            GetComponent<LightTower>().enabled = true;
         }
         else{
-            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<LightTower>().enabled = false;
         }
 	}
 }
