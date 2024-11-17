@@ -25,7 +25,7 @@ public class EnemyWaveSpawner : MonoBehaviour
             if (waveStart)
             {
                 started = true;
-                StartCoroutine(SpawnEnemiesFromFile("EnemySpawnData.txt"));
+                
             }
         }
     }
@@ -69,6 +69,10 @@ public class EnemyWaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnDelay);
 
         }
+    }
+    public void StartWaves()
+    {
+        StartCoroutine(SpawnEnemiesFromFile("EnemySpawnData.txt"));
     }
 
 }
