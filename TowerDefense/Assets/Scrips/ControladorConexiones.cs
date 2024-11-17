@@ -162,7 +162,7 @@ public class ControladorConexiones : MonoBehaviour
     {
         LineRenderer cable = Instantiate(cablePrefab);
         cable.positionCount = 2;
-        float radio = Vector3.Distance(origen.transform.position, destino.transform.position);
+        float radio = Vector3.Distance(origen.transform.position, destino.transform.position) /2;
         cable.SetPosition(0, Vector3.left * radio);
         cable.SetPosition(1, Vector3.right * radio);
         cable.transform.position = (origen.transform.position + destino.transform.position) / 2;
@@ -172,7 +172,7 @@ public class ControladorConexiones : MonoBehaviour
         collider.isTrigger = true;
         collider.size = new Vector2(Vector3.Distance(origen.transform.position, destino.transform.position), 0.1f);
         //collider.transform.position = (origen.transform.position + destino.transform.position) / 2;
-        //collider.transform.rotation = Quaternion.FromToRotation(Vector3.right, destino.transform.position - origen.transform.position);
+        collider.transform.rotation = Quaternion.FromToRotation(Vector3.right, destino.transform.position - origen.transform.position);
 
         cables.Add(cable); // Añadir el cable a la lista
     }
