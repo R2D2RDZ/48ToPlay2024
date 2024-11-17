@@ -50,8 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 0
   life: 5
-  speed: 1
-  reachDistance: 0.01
+  speed: 0.9
+  reachDistance: 0.1
   maxSpeed: 10
   damage: 10
   isVisible: 0

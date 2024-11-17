@@ -51,7 +51,7 @@ MonoBehaviour:
   value: 0
   life: 50
   speed: 0.25
-  reachDistance: 0.01
+  reachDistance: 0.1
   maxSpeed: 10
   damage: 10
   isVisible: 0
