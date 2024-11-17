@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
 
@@ -28,6 +29,7 @@ public class Faros : MonoBehaviour
     public void ConectarACentral()
     {
         estaConectada = true;
+        Debug.Log("Esta conectada a la central");
         PropagarConexion();
         ActualizarEnergiaTorreta();
     }
