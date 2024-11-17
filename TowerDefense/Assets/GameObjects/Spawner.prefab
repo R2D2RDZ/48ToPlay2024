@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &944590744199159217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7219780521807546053}
+  - component: {fileID: 4446617145963720174}
+  - component: {fileID: 5156129805308350247}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7219780521807546053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944590744199159217}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.45, y: 8.2, z: -0.11582869}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4446617145963720174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944590744199159217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3a870217d9e0144935cf5d135ee5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 4000424395377160995, guid: c7acdf27825e1e94da2b413f000172cc, type: 3}
+  - {fileID: 4000424395377160995, guid: 10dfe06b9dc8e8c4399e4c24a8cf3c47, type: 3}
+  - {fileID: 4000424395377160995, guid: 5e6b8fa1d814c364ca10b9acdcaeed33, type: 3}
+  - {fileID: 4000424395377160995, guid: 79059936c0ee5854ba30873fbab64da8, type: 3}
+  spawnPoint: {fileID: 7219780521807546053}
+  spawnDelay: 2
+  waveStart: 0
+  started: 0
+--- !u!114 &5156129805308350247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944590744199159217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc60df5394b44c4ab513aeea4ea7846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigoBase: {fileID: 4000424395377160995, guid: c7acdf27825e1e94da2b413f000172cc, type: 3}
+  enemigoFuerte: {fileID: 4000424395377160995, guid: 10dfe06b9dc8e8c4399e4c24a8cf3c47, type: 3}
+  enemigoHacker: {fileID: 4000424395377160995, guid: 5e6b8fa1d814c364ca10b9acdcaeed33, type: 3}
+  enemigoBoss: {fileID: 4000424395377160995, guid: 79059936c0ee5854ba30873fbab64da8, type: 3}
+  spawnPoint: {fileID: 7219780521807546053}

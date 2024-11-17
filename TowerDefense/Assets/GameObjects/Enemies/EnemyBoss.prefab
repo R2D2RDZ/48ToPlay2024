@@ -48,12 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed75e0a2c2b153044a3a93ade19530b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  life: 50
+  value: 50
+  life: 20
   speed: 0.25
   reachDistance: 0.1
   maxSpeed: 0.25
-  damage: 30
+  damage: 40
   isVisible: 0
   currentNavPoint: 1
   points: {fileID: 0}

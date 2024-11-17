@@ -140,11 +140,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  cooldown: 50
+  cooldown: 60
   speed: 60
   isEnabled: 1
   time: 0
-  cost: 1
+  cost: 60
   energyConsumed: 1
   isOn: 0
   projectile: {fileID: 3139875410049840756, guid: 9cda3f6b9fd20c74396ce044cb313613, type: 3}

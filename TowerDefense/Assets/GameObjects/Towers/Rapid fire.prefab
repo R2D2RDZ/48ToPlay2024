@@ -144,8 +144,8 @@ MonoBehaviour:
   speed: 60
   isEnabled: 1
   time: 0
-  cost: 1
-  energyConsumed: 1
+  cost: 40
+  energyConsumed: 5
   isOn: 1
   projectile: {fileID: 3139875410049840756, guid: 564afec97fdecd14985fa2d30ee27df5, type: 3}
   flash: {fileID: 0}

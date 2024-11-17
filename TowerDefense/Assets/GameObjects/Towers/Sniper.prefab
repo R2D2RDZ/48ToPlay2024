@@ -166,13 +166,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af828a6317470d146a8cdefc19cfef9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 1
   cooldown: 75
   speed: 50
   isEnabled: 1
   time: 0
-  cost: 0
-  energyConsumed: 1
+  cost: 60
+  energyConsumed: 5
   isOn: 0
   projectile: {fileID: 3139875410049840756, guid: 564afec97fdecd14985fa2d30ee27df5, type: 3}
   flash: {fileID: 0}
