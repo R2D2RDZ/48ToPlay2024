@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3592805730724176666}
   - component: {fileID: 4992298335446498777}
   - component: {fileID: 1237806255576049335}
+  - component: {fileID: -4628625634645471933}
   m_Layer: 5
   m_Name: Option
   m_TagString: Untagged
@@ -89,7 +90,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1237806255576049335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4628625634645471933}
+        m_TargetAssemblyTypeName: CreateTower, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1237806255576049335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,3 +133,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-4628625634645471933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545430879470118601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168c86cfc9dbcbc4999a91845e5ee791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
+  Position: {x: 0, y: 0, z: 0}
