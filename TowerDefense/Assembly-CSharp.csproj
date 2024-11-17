@@ -65,11 +65,13 @@
     <Compile Include="Assets\Scrips\Enemy\HackerAttributes.cs" />
     <Compile Include="Assets\Scrips\ControladorConexiones.cs" />
     <Compile Include="Assets\Scrips\Enemy\EnemySpawner.cs" />
+    <Compile Include="Assets\Scrips\SceneChanger.cs" />
     <Compile Include="Assets\Scrips\Enemy\EnemyAttributes.cs" />
     <Compile Include="Assets\Scrips\Central#2.cs" />
     <Compile Include="Assets\Scrips\CreateTower.cs" />
     <Compile Include="Assets\Scrips\NewFaros.cs" />
     <Compile Include="Assets\Scrips\Faros.cs" />
+    <Compile Include="Assets\Scrips\GameOver.cs" />
     <Compile Include="Assets\Scrips\SelectMenu.cs" />
     <Compile Include="Assets\Scrips\CentralElectrica.cs" />
     <Compile Include="Assets\Libraries\R2D2RDZ.cs" />
