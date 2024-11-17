@@ -32,6 +32,7 @@ public class NewFaros : MonoBehaviour
             estaConectada = false;
             RevisarConexion() ;
             Debug.Log(gameObject.name + " desconectado con " + faro.name);
+            DesconectarTodoALV();
             return true;
         }
         return false;
@@ -127,5 +128,14 @@ public class NewFaros : MonoBehaviour
     void LiberarEnergia(GunClass torreta)
     {
         Central2.instance.GastarEnergia(-torreta.energyConsumed);
+    }
+
+    void DesconectarTodoALV()
+    {
+        GameObject[] bobinas = GameObject.FindGameObjectsWithTag("Bobina");
+        foreach (GameObject bobina in bobinas)
+        {
+            bobina.GetComponent<NewFaros>().estaConectada = false;
+        }
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Free
   - Foco
+  - Bobina
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Enemy
-  - 
+  - Bobinas
   - 
   - 
   - 
