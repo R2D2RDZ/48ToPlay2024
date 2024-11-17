@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\faros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\karen\\onedrive\\escritorio\\48toplay2024\\towerdefense\\assets\\scrips\\gunclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\gunclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\karen\\onedrive\\escritorio\\48toplay2024\\towerdefense\\assets\\scrips\\guns\\gunclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\guns\\gunclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\karen\\onedrive\\escritorio\\48toplay2024\\towerdefense\\assets\\scrips\\centralelectrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\assets\\scrips\\centralelectrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\centralelectrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|c:\\users\\karen\\onedrive\\escritorio\\48toplay2024\\towerdefense\\assets\\scrips\\controladorconexiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\assets\\scrips\\controladorconexiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\controladorconexiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,13 +32,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GunClass.cs",
-              "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\GunClass.cs",
-              "RelativeDocumentMoniker": "Assets\\Scrips\\GunClass.cs",
-              "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\GunClass.cs",
-              "RelativeToolTip": "Assets\\Scrips\\GunClass.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAPAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Guns\\GunClass.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\Guns\\GunClass.cs",
+              "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Guns\\GunClass.cs",
+              "RelativeToolTip": "Assets\\Scrips\\Guns\\GunClass.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T04:04:21.099Z",
+              "WhenOpened": "2024-11-17T06:06:48.237Z",
               "EditorCaption": ""
             },
             {
@@ -64,8 +64,7 @@
               "RelativeToolTip": "Assets\\Scrips\\ControladorConexiones.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAAQwKUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T04:02:21.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T04:02:21.169Z"
             },
             {
               "$type": "Document",
@@ -75,7 +74,7 @@
               "RelativeDocumentMoniker": "Assets\\Scrips\\Faros.cs",
               "ToolTip": "C:\\Users\\Karen\\OneDrive\\Escritorio\\48ToPlay2024\\TowerDefense\\Assets\\Scrips\\Faros.cs",
               "RelativeToolTip": "Assets\\Scrips\\Faros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAApwDwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T04:02:01.651Z",
               "EditorCaption": ""

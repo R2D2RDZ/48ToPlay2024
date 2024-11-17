@@ -19,7 +19,7 @@ public class GunClass : MonoBehaviour {
 	//[SerializeField]
 	public float cost;
 	public float energyConsumed = 1;
-	public static bool isOn = true;
+	public bool isOn = false;
 	//[SerializeField]
 	public GameObject projectile;
 	public GameObject flash;

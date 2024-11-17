@@ -13,12 +13,14 @@ public class Faros : MonoBehaviour
     public List<Faros> bobinasConectadas = new();
     public GunClass Torres;
     public bool ApEn;
+    public GunClass gunInstance;
 
     void Start()
     {
         //torretasConectadas = new List<GunClass>();
         EnergiaTotal = CentralElectrica.energiaTotalCentral;
-        ApEn = GunClass.isOn;
+        //GunClass gunInstance = GameObject.Find("Gun").GetComponent<GunClass>();
+
         if (centralElectrica != null)
         {
             ConectarACentral();
@@ -126,14 +128,24 @@ public class Faros : MonoBehaviour
             {
                 //torreta.Energia = torreta.energyConsumed;
                 //energiaDisponible -= torreta.energyConsumed;
-                Central2.instance.GastarEnergia(torreta.energyConsumed);
-                ApEn = true;
+                //ApEn = true;
+                if (torreta != null)
+                {
+                    // Modifica la variable isOn
+                    Central2.instance.GastarEnergia(torreta.energyConsumed);
+                    torreta.isOn = true;
+                }
                 Debug.Log($"Torreta: {torreta.name}: Activada, energía restante: {CentralElectrica.energiaTotalCentral}%");
             }
             else
             {
                 //torreta.Energia = 0;
-                ApEn = false;
+                //ApEn = false;
+                if (torreta != null)
+                {
+                    // Modifica la variable isOn
+                    gunInstance.isOn = false;
+                }
                 Debug.Log($"Torreta: {torreta.name}: Sin energía suficiente.");
             }
         }
