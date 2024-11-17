@@ -10,10 +10,14 @@ public class Central2
     // Objeto para el bloqueo en caso de uso en hilos
     private static readonly object lockObj = new object();
 
+    public float energiaMax { get; private set; }
+    public float energiaDisponible { get; private set; }
+
     // Constructor privado para evitar instanciación externa
     private Central2()
     {
-      CentralElectrica. energiaTotalCentral = 100.0f;
+        CentralElectrica.energiaTotalCentral = 100.0f;
+        energiaMax = 100f;
     }
 
     // Propiedad para obtener la única instancia
@@ -39,10 +43,13 @@ public class Central2
     public void GastarEnergia(float Energia)
     {
         CentralElectrica.energiaTotalCentral -= Energia;
+        energiaDisponible -= Energia;
+
     }
 
     public void ResetEenergia()
     {
         CentralElectrica.energiaTotalCentral = 100.0f;
+        energiaDisponible = energiaMax;
     }
 }

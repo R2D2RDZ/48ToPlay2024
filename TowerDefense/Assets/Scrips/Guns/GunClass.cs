@@ -19,7 +19,7 @@ public class GunClass : MonoBehaviour {
 	//[SerializeField]
 	public float cost;
 	public float energyConsumed = 1;
-	public static bool isOn = false;
+	public bool isOn = false;
 	//[SerializeField]
 	public GameObject projectile;
 	public GameObject flash;
@@ -28,7 +28,7 @@ public class GunClass : MonoBehaviour {
 
 	public virtual void Attack() {
 		if (listEnemy.Count > 0) {
-			Debug.Log("Hay hay  Enemigos");
+			//Debug.Log("Hay hay  Enemigos");
 
 			GameObject enemyTarget = null;
 			int count = listEnemy.Count;
@@ -75,19 +75,19 @@ public class GunClass : MonoBehaviour {
 	}
 	private void OnTriggerEnter2D(Collider2D collision) {
 		if(collision.tag == "Enemy" /*&& collision.gameObject.GetComponent<EnemyAttributes>().isVisible*/){
-			Debug.Log("Encontre un Enemigo");
+			//Debug.Log("Encontre un Enemigo");
 			listEnemy.Add(collision.gameObject);
 		}
 		else{
-			Debug.Log("No hay enemigos");
+			//Debug.Log("No hay enemigos");
 		}
 	}
 	private void OnTriggerExit2D(Collider2D collision) {
 		if (collision.tag =="Enemy"){
-			Debug.Log("Se fue un Enemigo");
+			//Debug.Log("Se fue un Enemigo");
 			listEnemy.Remove(collision.gameObject);
 		} else {
-			Debug.Log("No hay enemigos");
+			//Debug.Log("No hay enemigos");
 		}
 	}
 }
