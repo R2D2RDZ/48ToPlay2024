@@ -62,7 +62,7 @@ TowerDefense/*.log
 
 # Visual Studio / MonoDevelop generated files
 TowerDefense/.vscode/
-TowerDefense/.vs/
+/TowerDefense/.vs/
 TowerDefense/*.csproj
 TowerDefense/*.unityproj
 TowerDefense/*.sln
@@ -74,3 +74,5 @@ TowerDefense/*.booproj
 TowerDefense/*.svd
 
 TowerDefense/UserSettings/
+
+/TowerDefense/.vs/TowerDefense/v17/

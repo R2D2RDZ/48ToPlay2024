@@ -50,8 +50,8 @@ MonoBehaviour:
   value: 0
   life: 10
   speed: 1
-  reachDistance: 0.01
-  maxSpeed: 10
+  reachDistance: 0.1
+  maxSpeed: 1
   damage: 10
   isVisible: 0
   currentNavPoint: 1

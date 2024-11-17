@@ -49,11 +49,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
-  life: 10
-  speed: 1
-  reachDistance: 0.01
+  life: 5
+  speed: 0.9
+  reachDistance: 0.1
   maxSpeed: 10
-  damage: 10
+  damage: 0.9
   isVisible: 0
   currentNavPoint: 1
   points: {fileID: 0}

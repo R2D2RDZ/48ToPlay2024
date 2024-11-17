@@ -51,9 +51,9 @@ MonoBehaviour:
   value: 0
   life: 50
   speed: 0.25
-  reachDistance: 0.01
-  maxSpeed: 10
-  damage: 10
+  reachDistance: 0.1
+  maxSpeed: 0.25
+  damage: 30
   isVisible: 0
   currentNavPoint: 1
   points: {fileID: 0}

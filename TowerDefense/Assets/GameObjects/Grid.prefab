@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7822694229946582190}
   - component: {fileID: 7683451366263490928}
   - component: {fileID: -4158001464269455754}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Grid
   m_TagString: Free
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -20
   m_Sprite: {fileID: 21300000, guid: 24381edcf61f60144ab87e332d63cdc2, type: 3}
   m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
