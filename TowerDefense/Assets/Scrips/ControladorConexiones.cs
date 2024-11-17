@@ -183,7 +183,7 @@ public class ControladorConexiones : MonoBehaviour
 
     }
 
-    void DestruirCable(LineRenderer cable)
+    public void DestruirCable(LineRenderer cable)
     {
         NewFaros origin = cable.gameObject.GetComponent<LineData>().origin.GetComponent<NewFaros>();
         NewFaros destino = cable.gameObject.GetComponent<LineData>().target.GetComponent<NewFaros>();

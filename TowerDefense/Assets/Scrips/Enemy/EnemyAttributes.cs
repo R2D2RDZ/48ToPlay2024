@@ -72,7 +72,7 @@ public class EnemyAttributes : MonoBehaviour
 
 //Dañar al player
     void OnCollisionEnter2D(Collision2D other){
-        var central = other.gameObject.GetComponent<CentralElectrica>();
+        var central = other.gameObject.GetComponent<ControladorConexiones>();
         if (central != null)
             {        
                 Player.Instance.DamageReceive(damage);
